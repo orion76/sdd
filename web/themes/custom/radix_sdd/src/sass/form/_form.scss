@@ -1,0 +1,13 @@
+.action-links {
+  li{
+    list-style: none
+  }
+}
+
+.button{
+  @extend .btn
+}
+
+.button--primary{
+  @extend .btn-primary
+}

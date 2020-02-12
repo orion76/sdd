@@ -16,9 +16,11 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "drupal/components": "^1.1",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/radix": "^4.7",
         "drush/drush": "^10.2"
     },
     "require-dev": {
@@ -32,11 +34,6 @@
         "sort-packages": true
     },
     "extra": {
-        "drupal-scaffold": {
-            "locations": {
-                "web-root": "web/"
-            }
-        },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],

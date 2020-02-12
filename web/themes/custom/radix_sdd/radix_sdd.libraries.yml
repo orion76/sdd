@@ -1,0 +1,10 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/radix_sdd.style.css: {}
+  js:
+    assets/js/radix_sdd.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

@@ -245,7 +245,7 @@ $databases['default']['default'] = [
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-# $settings['config_sync_directory'] = '/directory/outside/webroot';
+$settings['config_sync_directory'] = '../config/sync';
 
 /**
  * Settings:
@@ -714,7 +714,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
-
+$settings['trusted_host_patterns'] = ['^sdd\.ti\-work\.ru$'];
 /**
  * The default list of directories that will be ignored by Drupal's file API.
  *

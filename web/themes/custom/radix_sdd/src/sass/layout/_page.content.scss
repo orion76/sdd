@@ -1,0 +1,21 @@
+// Page: Content
+// -----------------------------------------------------------------------------
+.page__content {
+
+}
+
+.page-content {
+  display: flex;
+  .page__sidebar_left,
+  .page__sidebar_right{
+    flex: 1;
+  }
+  .page__content{
+    flex: 3;
+  }
+}
+
+.article__field-image{
+  float: left;
+  padding: 0 2em 0 0;
+}
