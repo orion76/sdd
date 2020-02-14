@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6ddef38-9731-42a3-9f37-d708e98e2692" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/READMY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/READMY.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,6 +247,10 @@
       <screen x="0" y="0" width="1366" height="743" />
     </state>
     <state x="187" y="7" key="SettingsEditor/0.0.1366.743@0.0.1366.743" timestamp="1581568314936" />
+    <state x="347" y="15" width="666" height="711" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581651709334">
+      <screen x="0" y="0" width="1366" height="743" />
+    </state>
+    <state x="347" y="15" width="666" height="711" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.743@0.0.1366.743" timestamp="1581651709334" />
     <state x="369" y="107" width="628" height="530" key="find.popup" timestamp="1581567289546">
       <screen x="0" y="0" width="1366" height="743" />
     </state>
