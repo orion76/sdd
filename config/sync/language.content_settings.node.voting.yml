@@ -1,0 +1,11 @@
+uuid: 33e504ae-3cb0-4e69-ace1-7a72f4be20b0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.voting
+id: node.voting
+target_entity_type_id: node
+target_bundle: voting
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,24 @@
+uuid: 02d12bb9-29f2-465a-b139-f58153198721
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.poll.teaser
+  module:
+    - layout_builder
+    - poll
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: poll.poll.teaser
+targetEntityType: poll
+bundle: poll
+mode: teaser
+content:
+  poll_votes:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

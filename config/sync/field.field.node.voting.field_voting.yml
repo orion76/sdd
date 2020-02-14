@@ -1,0 +1,25 @@
+uuid: 09a00e69-259b-43a7-9940-9ba612c84473
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_voting
+    - node.type.voting
+id: node.voting.field_voting
+field_name: field_voting
+entity_type: node
+bundle: voting
+label: Голосование
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:poll'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference

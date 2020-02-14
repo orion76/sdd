@@ -1,0 +1,33 @@
+uuid: 3d2c14b7-96d1-456e-90f8-cbc907a43c8a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_voting_comment
+    - node.type.voting
+  module:
+    - comment
+id: node.voting.field_voting_comment
+field_name: field_voting_comment
+entity_type: node
+bundle: voting
+label: Комментарии
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

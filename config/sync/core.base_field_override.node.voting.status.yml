@@ -1,0 +1,22 @@
+uuid: d733bf6c-a200-4572-88de-6a0f442b52f2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.voting
+id: node.voting.status
+field_name: status
+entity_type: node
+bundle: voting
+label: Опубликовано
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

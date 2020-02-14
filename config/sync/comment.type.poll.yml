@@ -1,0 +1,8 @@
+uuid: 2badd0ae-ac09-476a-b45d-1139aa69184f
+langcode: ru
+status: true
+dependencies: {  }
+id: poll
+label: 'Комментарии Опроса'
+target_entity_type_id: poll
+description: ''

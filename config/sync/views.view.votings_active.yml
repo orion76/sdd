@@ -1,19 +1,19 @@
-uuid: 3ce07a4a-c57f-4758-9468-1f10691603d4
+uuid: 2208c5bc-11c2-4daa-941e-a99baf18c0ae
 langcode: ru
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.category
+    - node.type.voting
   module:
-    - taxonomy
-    - user
-id: menyu_category_root
-label: 'Меню Категории (root)'
+    - node
+    - poll
+id: votings_active
+label: 'Активные голосования'
 module: views
 description: ''
 tag: ''
-base_table: taxonomy_term_field_data
-base_field: tid
+base_table: poll_field_data
+base_field: id
 display:
   default:
     display_plugin: default
@@ -22,9 +22,8 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -49,27 +48,18 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 16
+          items_per_page: 12
           offset: 0
       style:
         type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: false
       row:
         type: fields
-        options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: true
       fields:
-        tid:
-          id: tid
-          table: taxonomy_term_field_revision
-          field: tid
-          relationship: none
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: reverse__node__field_voting
           group_type: group
           admin_label: ''
           label: ''
@@ -128,13 +118,13 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: taxonomy_term
-          entity_field: tid
+          entity_type: node
+          entity_field: nid
           plugin_id: field
-        name:
-          id: name
-          table: taxonomy_term_field_data
-          field: name
+        question:
+          id: question
+          table: poll_field_data
+          field: question
           relationship: none
           group_type: group
           admin_label: ''
@@ -144,7 +134,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: '/materials/{{ tid }}'
+            path: '/node/{{ nid }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -158,8 +148,8 @@ display:
             target: ''
             nl2br: false
             max_length: 0
-            word_boundary: false
-            ellipsis: false
+            word_boundary: true
+            ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
@@ -193,48 +183,20 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          convert_spaces: false
-          entity_type: taxonomy_term
-          entity_field: name
-          plugin_id: term_name
+          entity_type: null
+          entity_field: question
+          plugin_id: field
       filters:
-        status:
-          value: '1'
-          table: taxonomy_term_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: taxonomy_term
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        vid:
-          id: vid
-          table: taxonomy_term_field_data
-          field: vid
-          value:
-            category: category
-          entity_type: taxonomy_term
-          entity_field: vid
-          plugin_id: bundle
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-        parent_target_id:
-          id: parent_target_id
-          table: taxonomy_term__parent
-          field: parent_target_id
-          relationship: parent_target_id
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: reverse__node__field_voting
           group_type: group
           admin_label: ''
-          operator: empty
+          operator: in
           value:
-            min: ''
-            max: ''
-            value: ''
+            voting: voting
           group: 1
           exposed: false
           expose:
@@ -251,9 +213,7 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -266,26 +226,25 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: taxonomy_term
-          entity_field: parent
-          plugin_id: numeric
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
       sorts: {  }
-      title: Разделы
+      title: 'Активные голосования'
       header: {  }
       footer: {  }
       empty: {  }
       relationships:
-        parent_target_id:
-          id: parent_target_id
-          table: taxonomy_term__parent
-          field: parent_target_id
+        reverse__node__field_voting:
+          id: reverse__node__field_voting
+          table: poll_field_data
+          field: reverse__node__field_voting
           relationship: none
           group_type: group
-          admin_label: Родитель
-          required: false
-          entity_type: taxonomy_term
-          entity_field: parent
-          plugin_id: standard
+          admin_label: field_voting
+          required: true
+          entity_type: poll
+          plugin_id: entity_reverse
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
@@ -293,7 +252,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user.permissions
       tags: {  }
   block_1:
     display_plugin: block
@@ -302,11 +260,9 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: Разделы
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user.permissions
       tags: {  }

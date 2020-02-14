@@ -14,8 +14,91 @@ dependencies:
   module:
     - comment
     - image
+    - layout_builder
+    - radix_layouts
+    - social_auth
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: radix_moscone
+        layout_settings:
+          label: ''
+        components:
+          6a5284ad-6545-4561-8941-e211baf1108e:
+            uuid: 6a5284ad-6545-4561-8941-e211baf1108e
+            region: sidebar
+            configuration:
+              id: 'field_block:node:article:field_image'
+              label: Изображение
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: large
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          38c75559-5f4a-4367-bbe6-389e7c5912c6:
+            uuid: 38c75559-5f4a-4367-bbe6-389e7c5912c6
+            region: contentmain
+            configuration:
+              id: 'field_block:node:article:body'
+              label: Содержимое
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          f9e72290-c667-417b-8adc-fda4a85c837b:
+            uuid: f9e72290-c667-417b-8adc-fda4a85c837b
+            region: footer
+            configuration:
+              id: 'field_block:node:article:comment'
+              label: Комментарии
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: comment_default
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          3a5b5829-4c8c-4937-a0eb-e8f0837a3bff:
+            uuid: 3a5b5829-4c8c-4937-a0eb-e8f0837a3bff
+            region: footer
+            configuration:
+              id: social_auth_login
+              label: 'Войти через соц.сети'
+              provider: social_auth
+              label_display: visible
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.default

@@ -24,6 +24,11 @@ module:
   help: 0
   history: 0
   image: 0
+  inline_entity_form: 0
+  jsonapi: 0
+  jsonapi_defaults: 0
+  jsonapi_extras: 0
+  jsonapi_hypermedia: 0
   language: 0
   layout_builder: 0
   layout_discovery: 0
@@ -35,7 +40,9 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  poll: 0
   quickedit: 0
+  radix_layouts: 0
   rate: 0
   rdf: 0
   react_comments: 0
@@ -44,6 +51,11 @@ module:
   serialization: 0
   shortcut: 0
   shs: 0
+  social_api: 0
+  social_auth: 0
+  social_auth_facebook: 0
+  social_auth_github: 0
+  social_auth_vk: 0
   system: 0
   taxonomy: 0
   text: 0
