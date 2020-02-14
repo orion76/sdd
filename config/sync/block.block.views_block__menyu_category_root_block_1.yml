@@ -1,0 +1,30 @@
+uuid: 39828b12-ad6f-4ff2-8e09-c4311f29fa2c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.menyu_category_root
+  module:
+    - system
+    - views
+  theme:
+    - radix_sdd
+id: views_block__menyu_category_root_block_1
+theme: radix_sdd
+region: sidebar_right
+weight: 0
+provider: null
+plugin: 'views_block:menyu_category_root-block_1'
+settings:
+  id: 'views_block:menyu_category_root-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/materials\r\n/materials/*"
+    negate: false
+    context_mapping: {  }

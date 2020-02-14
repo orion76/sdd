@@ -55,6 +55,8 @@
       <path value="$PROJECT_DIR$/vendor/pear/console_getopt" />
       <path value="$PROJECT_DIR$/vendor/drupal/core-composer-scaffold" />
       <path value="$PROJECT_DIR$/vendor/drupal/core-project-message" />
+      <path value="$USER_HOME$/www/my/sdd/web/core" />
+      <path value="$USER_HOME$/www/my/sdd/web/modules" />
     </include_path>
   </component>
 </project>

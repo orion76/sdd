@@ -1,0 +1,11 @@
+uuid: 3029058b-31fc-450f-8cbf-986df30d5a7c
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Om6FEO7vZZMkPIbVvfxtdkWerQ2PvQM4sWUd6Q3ZnfI
+id: administrator
+label: Администратор
+weight: 2
+is_admin: true
+permissions: {  }

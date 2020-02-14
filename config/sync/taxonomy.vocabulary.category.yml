@@ -1,0 +1,8 @@
+uuid: a322b922-5b8b-43dd-a064-d2af8245736b
+langcode: ru
+status: true
+dependencies: {  }
+name: Категории
+vid: category
+description: 'Структура каталога материалов'
+weight: 0

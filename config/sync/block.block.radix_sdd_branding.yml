@@ -1,0 +1,25 @@
+uuid: 7d2c949c-4a20-4b4e-af8a-58c2959ac5c6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - radix_sdd
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: radix_sdd_branding
+theme: radix_sdd
+region: navbar_branding
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Брендинг сайта'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

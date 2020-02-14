@@ -1,0 +1,8 @@
+allowed_tags: '<a><b><em><strong><i><p>'
+prefer_gravatar: 0
+user_avatar_image_style: thumbnail
+_core:
+  default_config_hash: dDgCqZH6vg84w-bfzjj3BKby-7uET0SrpIK-D6fteVo
+langcode: ru
+anon_default_avatar_fid:
+  - '1'

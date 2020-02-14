@@ -1,0 +1,22 @@
+uuid: a996a701-c02d-4e7c-9073-1f5af0b457d2
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - radix_sdd
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: radix_sdd_messages
+theme: radix_sdd
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Сообщения статуса'
+  provider: system
+  label_display: '0'
+visibility: {  }

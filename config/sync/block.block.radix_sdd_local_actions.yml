@@ -1,0 +1,20 @@
+uuid: 6b721944-aa2f-4562-b23d-d25e7c2e4fb0
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - radix_sdd
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: radix_sdd_local_actions
+theme: radix_sdd
+region: content
+weight: -1
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  provider: core
+  label_display: '0'
+visibility: {  }

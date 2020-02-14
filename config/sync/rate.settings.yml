@@ -1,0 +1,13 @@
+use_ajax: true
+widget_type: number_up_down
+_core:
+  default_config_hash: OSlQ2kt5a0lrAfT2zNXmTuCSQVBy_0Yyisd4KkNMBpk
+langcode: ru
+enabled_types_widgets:
+  comment:
+    comment:
+      widget_type: thumbs_up_down
+      use_ajax: true
+bot_minute_threshold: '0'
+bot_hour_threshold: '0'
+botscout_key: ''

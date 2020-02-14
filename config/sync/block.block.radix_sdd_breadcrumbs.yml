@@ -1,0 +1,22 @@
+uuid: da9f14e2-0946-4e93-aa84-e9308e4e9705
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - radix_sdd
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: radix_sdd_breadcrumbs
+theme: radix_sdd
+region: header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Строка навигации'
+  provider: system
+  label_display: '0'
+visibility: {  }

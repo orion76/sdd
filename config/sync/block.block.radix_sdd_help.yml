@@ -1,0 +1,22 @@
+uuid: a096b633-5b85-4f31-97c9-c1739e31b727
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - radix_sdd
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: radix_sdd_help
+theme: radix_sdd
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Справка
+  provider: help
+  label_display: '0'
+visibility: {  }

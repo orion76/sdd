@@ -1,0 +1,13 @@
+uuid: d8efa887-1f86-4e1d-99a6-a816858d719d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: JBptjnfuOMtsdKygklXxoOgeOCTMtQxlkymjnnj-cC0
+id: node_unpromote_action
+label: 'Удалить материал с главной страницы'
+type: node
+plugin: node_unpromote_action
+configuration: {  }

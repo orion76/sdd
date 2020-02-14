@@ -1,0 +1,13 @@
+uuid: d18d4ada-817e-40d8-bcc7-df67bc0d2a08
+langcode: ru
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: C00dyL_W_5M0nFlgUB3lWUTUs96jn51Jw1MLHVEHZD0
+id: comment_publish_action
+label: 'Опубликовать комментарий'
+type: comment
+plugin: 'entity:publish_action:comment'
+configuration: {  }

@@ -1,0 +1,20 @@
+uuid: e97653b6-c015-4750-b626-05be3fb02747
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - radix
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: radix_local_actions
+theme: radix
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  provider: core
+  label_display: '0'
+visibility: {  }

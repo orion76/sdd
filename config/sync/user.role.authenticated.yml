@@ -1,0 +1,26 @@
+uuid: 3eef14b5-58db-4128-9e9a-e268ec1b8b87
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Аутентифицированный пользователь'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'restful delete comment'
+  - 'restful get comment'
+  - 'restful get comments'
+  - 'restful get me'
+  - 'restful patch comment'
+  - 'restful post comments'
+  - 'restful put comment'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'

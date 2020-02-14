@@ -1,0 +1,22 @@
+uuid: 99bb770a-ae63-42bd-bfa4-34b44dab91e7
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - radix_sdd
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: radix_sdd_content
+theme: radix_sdd
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Содержимое страницы'
+  provider: system
+  label_display: '0'
+visibility: {  }

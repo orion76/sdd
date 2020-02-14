@@ -1,0 +1,22 @@
+uuid: d4b271e0-efbd-4990-a514-088795c89954
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - radix_sdd
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: radix_sdd_local_tasks
+theme: radix_sdd
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
