@@ -1,0 +1,11 @@
+uuid: 4e912074-3301-4c3c-9a0c-60a55aae83a8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.roadmap
+id: node.roadmap
+target_entity_type_id: node
+target_bundle: roadmap
+default_langcode: site_default
+language_alterable: false

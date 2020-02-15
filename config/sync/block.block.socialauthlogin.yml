@@ -1,0 +1,28 @@
+uuid: c8bed8e8-f375-4b42-89ce-5fd3095b172a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - social_auth
+    - user
+  theme:
+    - radix_sdd
+id: socialauthlogin
+theme: radix_sdd
+region: navbar_branding
+weight: -3
+provider: null
+plugin: social_auth_login
+settings:
+  id: social_auth_login
+  label: 'Войти через соц.сети'
+  provider: social_auth
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

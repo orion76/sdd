@@ -1,0 +1,23 @@
+uuid: e13e8aa4-cffd-4433-a16c-f289db78f6ed
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.roadmap
+  module:
+    - text
+id: node.roadmap.body
+field_name: body
+entity_type: node
+bundle: roadmap
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

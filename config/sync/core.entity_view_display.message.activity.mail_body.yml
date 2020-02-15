@@ -1,0 +1,23 @@
+uuid: e2b2266b-27ba-40b7-8482-d4a8b40e0d41
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - message.template.activity
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.activity.mail_body
+targetEntityType: message
+bundle: activity
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  partial_0: true

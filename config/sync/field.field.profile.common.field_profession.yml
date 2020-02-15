@@ -1,0 +1,29 @@
+uuid: 5c60d16f-702c-4014-877d-af3839746207
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profession
+    - profile.type.common
+    - taxonomy.vocabulary.profession
+id: profile.common.field_profession
+field_name: field_profession
+entity_type: profile
+bundle: common
+label: Профессия
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      profession: profession
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 5d73593e-c1fa-4aa8-9412-38f04e540742
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.roadmap
+id: node.roadmap.status
+field_name: status
+entity_type: node
+bundle: roadmap
+label: Опубликовано
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

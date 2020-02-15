@@ -186,8 +186,8 @@ display:
           tags:
             previous: '‹ Предыдущий'
             next: 'Следующий ›'
-            first: '« Первая'
-            last: 'Последняя »'
+            first: '« First'
+            last: 'Last »'
           quantity: 9
       query:
         type: views_query

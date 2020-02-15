@@ -1,1 +1,0 @@
-﻿CKEDITOR.plugins.setLang("fakeobjects","eu",{anchor:"Aingura",flash:"Flash animazioa",hiddenfield:"Ezkutuko eremua",iframe:"IFrame-a",unknown:"Objektu ezezaguna"});

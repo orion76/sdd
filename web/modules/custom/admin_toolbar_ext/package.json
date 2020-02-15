@@ -1,0 +1,16 @@
+{
+  "name": "admin_toolbar_ext",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass scss/admin_toolbar_ext.scss css/admin_toolbar_ext.css",
+    "sass-watch": "npm run sass; node-sass -w scss/admin_toolbar_ext.scss css/admin_toolbar_ext.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

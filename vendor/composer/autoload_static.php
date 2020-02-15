@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246
+class ComposerStaticInit394fd7777be4fbd0f1e333a854426691
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -26,6 +26,7 @@ class ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246
         '0b0974a5566a1077e4f2e111341112c1' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/normalize_server.php',
         '1ca3bc274755662169f9629d5412a1da' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/normalize_uploaded_files.php',
         '40360c0b9b437e69bcbb7f1349ce029e' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/parse_cookie_header.php',
+        'b45b351e6b6f7487d819961fef2fda77' => __DIR__ . '/..' . '/jakeasmith/http_build_url/src/http_build_url.php',
         '952683d815ff0a7bf322b93c0be7e4e4' => __DIR__ . '/..' . '/chi-teck/drupal-code-generator/src/bootstrap.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
     );
@@ -79,6 +80,8 @@ class ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246
             'Symfony\\Component\\ClassLoader\\' => 30,
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
+            'Shaper\\Tests\\' => 13,
+            'Shaper\\' => 7,
             'SelfUpdate\\' => 11,
         ),
         'R' => 
@@ -99,10 +102,12 @@ class ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246
         ),
         'L' => 
         array (
+            'League\\OAuth2\\Client\\' => 21,
             'League\\Container\\' => 17,
         ),
         'J' => 
         array (
+            'JsonSchema\\' => 11,
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
@@ -125,6 +130,7 @@ class ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246
         'D' => 
         array (
             'Drush\\Internal\\' => 15,
+            'Drush\\Commands\\radix\\' => 21,
             'Drush\\' => 6,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
@@ -153,6 +159,9 @@ class ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246
         'A' => 
         array (
             'Asm89\\Stack\\' => 12,
+            'Ajgl\\Twig\\Extension\\' => 20,
+            'Aego\\OAuth2\\Client\\Provider\\' => 28,
+            'Abraham\\TwitterOAuth\\' => 21,
         ),
     );
 
@@ -293,6 +302,14 @@ class ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
         ),
+        'Shaper\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/e0ipso/shaper/tests/src',
+        ),
+        'Shaper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/e0ipso/shaper/src',
+        ),
         'SelfUpdate\\' => 
         array (
             0 => __DIR__ . '/..' . '/consolidation/self-update/src',
@@ -325,9 +342,21 @@ class ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
         ),
+        'League\\OAuth2\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/oauth2-client/src',
+            1 => __DIR__ . '/..' . '/league/oauth2-facebook/src',
+            2 => __DIR__ . '/..' . '/league/oauth2-github/src',
+            3 => __DIR__ . '/..' . '/league/oauth2-google/src',
+            4 => __DIR__ . '/..' . '/league/oauth2-instagram/src',
+        ),
         'League\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/container/src',
+        ),
+        'JsonSchema\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
         ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
@@ -368,6 +397,10 @@ class ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246
         'Drush\\Internal\\' => 
         array (
             0 => __DIR__ . '/..' . '/drush/drush/src/internal-forks',
+        ),
+        'Drush\\Commands\\radix\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/themes/contrib/radix/Commands/radix',
         ),
         'Drush\\' => 
         array (
@@ -457,6 +490,18 @@ class ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246
         array (
             0 => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack',
         ),
+        'Ajgl\\Twig\\Extension\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ajgl/breakpoint-twig-extension/src',
+        ),
+        'Aego\\OAuth2\\Client\\Provider\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aego/oauth2-mailru/src',
+        ),
+        'Abraham\\TwitterOAuth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/abraham/twitteroauth/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -540,11 +585,11 @@ class ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInitdbcd190d279a5a1fe58bf939e65ab246::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit394fd7777be4fbd0f1e333a854426691::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit394fd7777be4fbd0f1e333a854426691::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit394fd7777be4fbd0f1e333a854426691::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit394fd7777be4fbd0f1e333a854426691::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit394fd7777be4fbd0f1e333a854426691::$classMap;
 
         }, null, ClassLoader::class);
     }

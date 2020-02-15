@@ -1,0 +1,20 @@
+uuid: a3c8c749-f920-4eac-b9d0-f6f7888f3c77
+langcode: ru
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.field_discuccion_comments
+field_name: field_discuccion_comments
+entity_type: node
+type: comment
+settings:
+  comment_type: comment
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

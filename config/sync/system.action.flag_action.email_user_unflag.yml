@@ -1,0 +1,15 @@
+uuid: c422f77c-df46-4443-8742-a5a2ef5f8c08
+langcode: ru
+status: true
+dependencies:
+  config:
+    - flag.flag.email_user
+  module:
+    - flag
+id: flag_action.email_user_unflag
+label: 'Don''t send email'
+type: user
+plugin: 'flag_action:email_user_unflag'
+configuration:
+  flag_id: email_user
+  flag_action: unflag

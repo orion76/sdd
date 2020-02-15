@@ -1,0 +1,16 @@
+{
+    "name": "admin_toolbar_ext",
+    "type": "drupal-module",
+    "description": "Drupal 8 admin toolbar helper",
+    "keywords": [
+    ],
+    "homepage": "https://github.com/orion76/admin_toolbar_ext",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://github.com/orion76/admin_toolbar_ext",
+        "source": "https://github.com/orion76/admin_toolbar_ext"
+    },
+    "require": {
+        "drupal/core": "~8"
+    }
+}

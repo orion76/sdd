@@ -5,9 +5,6 @@ auth:
   social_auth_github:
     route: social_auth_github.redirect_to_github
     img_path: modules/contrib/social_auth_github/img/github_logo.svg
-  social_auth_vk:
-    route: social_auth_vk.redirect_to_vk
-    img_path: modules/contrib/social_auth_vk/img/vk_logo.svg
 post_login: '#'
 redirect_user_form: false
 disable_admin_login: true

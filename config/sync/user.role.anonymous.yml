@@ -11,11 +11,6 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access poll overview'
-  - 'access polls'
   - 'access site-wide contact form'
-  - 'restful get comments'
-  - 'restful get me'
-  - 'restful post comments'
   - 'search content'
   - 'use text format restricted_html'

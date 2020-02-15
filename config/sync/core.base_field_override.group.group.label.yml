@@ -1,0 +1,18 @@
+uuid: 5774762a-0c6e-4a45-a8d2-87cb2cd4e85e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.group
+id: group.group.label
+field_name: label
+entity_type: group
+bundle: group
+label: Наименование
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

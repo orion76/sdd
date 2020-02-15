@@ -1,0 +1,10 @@
+uuid: 2f35c67b-a650-46e0-adf8-dfc3e7bce55e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: node.statistics
+label: Статистика
+targetEntityType: node
+cache: true

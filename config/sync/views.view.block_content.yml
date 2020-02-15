@@ -251,7 +251,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Обновлено
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -307,7 +307,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Операции
+          label: Operations
           exclude: false
           alter:
             alter_text: false

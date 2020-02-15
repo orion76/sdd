@@ -1,0 +1,22 @@
+uuid: e48d4ecb-338e-4263-abc1-825f8614a278
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.activity
+id: node.activity.promote
+field_name: promote
+entity_type: node
+bundle: activity
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

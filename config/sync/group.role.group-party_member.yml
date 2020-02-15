@@ -1,0 +1,14 @@
+uuid: 339ec380-3c05-45c2-bd3e-7cb354c0d28e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.group
+id: group-party_member
+label: 'Член партии'
+weight: 4
+internal: false
+audience: member
+group_type: group
+permissions_ui: true
+permissions: {  }

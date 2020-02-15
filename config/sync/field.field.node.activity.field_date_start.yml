@@ -1,0 +1,24 @@
+uuid: c2f4f3cf-81eb-488e-a584-7b362f4b809c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_start
+    - node.type.activity
+  module:
+    - datetime
+id: node.activity.field_date_start
+field_name: field_date_start
+entity_type: node
+bundle: activity
+label: Начало
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: '+1 day'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

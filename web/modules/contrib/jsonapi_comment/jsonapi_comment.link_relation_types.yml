@@ -1,0 +1,9 @@
+# JSON:API Comment's extension link relation types.
+# See https://tools.ietf.org/html/rfc8288#section-2.1.2
+comments:
+  uri: 'https://drupal.org/project/jsonapi_comment/link-relations/#comments'
+  description: "The link's target points to a resource that has comments on the link's context."
+  notes: "This link relation type extends the `related` link relation type. It inherits all of the same semantics while adding new semantics of its own."
+comment:
+  uri: 'https://drupal.org/project/jsonapi_comment/link-relations/#comment'
+  description: "The link's target points to a resource where a comment on the link's context can be posted."

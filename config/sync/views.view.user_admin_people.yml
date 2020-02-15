@@ -54,8 +54,8 @@ display:
           tags:
             previous: '‹ Предыдущий'
             next: 'Следующий ›'
-            first: '« Первая'
-            last: 'Последняя »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -148,7 +148,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Массовое обновление'
+          label: 'Bulk update'
           exclude: false
           alter:
             alter_text: false
@@ -250,7 +250,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Статус
+          label: Status
           exclude: false
           alter:
             alter_text: false
@@ -306,7 +306,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Роли
+          label: Roles
           exclude: false
           alter:
             alter_text: false
@@ -469,7 +469,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Операции
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -650,7 +650,7 @@ display:
             operator_list: {  }
           is_grouped: true
           group_info:
-            label: Статус
+            label: Status
             description: ''
             identifier: status
             optional: true

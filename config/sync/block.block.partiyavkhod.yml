@@ -1,0 +1,38 @@
+uuid: a213bb0b-b6ed-4857-87a9-9e57c5f7b7dd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.party-gate
+  module:
+    - group
+    - system
+  theme:
+    - radix_sdd
+id: partiyavkhod
+theme: radix_sdd
+region: navbar_branding
+weight: 0
+provider: null
+plugin: 'system_menu_block:party-gate'
+settings:
+  id: 'system_menu_block:party-gate'
+  label: Партия(вход)
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/party\r\n/party/*\r\n/group\r\n/group/*"
+    negate: true
+    context_mapping: {  }
+  group_type:
+    id: group_type
+    group_types:
+      group: group
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

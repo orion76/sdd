@@ -1,0 +1,14 @@
+uuid: 601a0f16-2fee-4ba9-a7ef-b190bc3bd63b
+langcode: ru
+status: true
+dependencies: {  }
+template: activity
+label: Мероприятие
+description: ''
+text: {  }
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

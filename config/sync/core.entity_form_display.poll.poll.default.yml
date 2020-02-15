@@ -3,7 +3,14 @@ langcode: ru
 status: true
 dependencies:
   module:
+    - field_layout
+    - layout_discovery
     - poll
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: poll.poll.default
 targetEntityType: poll
 bundle: poll

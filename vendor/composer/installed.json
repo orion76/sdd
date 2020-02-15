@@ -1,5 +1,165 @@
 [
     {
+        "name": "abraham/twitteroauth",
+        "version": "0.6.6",
+        "version_normalized": "0.6.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/abraham/twitteroauth.git",
+            "reference": "fc0766220c79087ac8178625d34e88ca29160d5b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/abraham/twitteroauth/zipball/fc0766220c79087ac8178625d34e88ca29160d5b",
+            "reference": "fc0766220c79087ac8178625d34e88ca29160d5b",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "phpmd/phpmd": "2.3.*",
+            "phpunit/phpunit": "4.8.*",
+            "squizlabs/php_codesniffer": "2.3.*"
+        },
+        "time": "2016-10-10T14:20:30+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Abraham\\TwitterOAuth\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Abraham Williams",
+                "email": "abraham@abrah.am",
+                "homepage": "https://abrah.am",
+                "role": "Developer"
+            }
+        ],
+        "description": "The most popular PHP library for use with the Twitter OAuth REST API.",
+        "homepage": "https://twitteroauth.com",
+        "keywords": [
+            "Twitter API",
+            "Twitter oAuth",
+            "api",
+            "oauth",
+            "rest",
+            "social",
+            "twitter"
+        ]
+    },
+    {
+        "name": "aego/oauth2-mailru",
+        "version": "2.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/rakeev/oauth2-mailru.git",
+            "reference": "718b7b5db469cd98e4382051c6d8a540622ba11b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/rakeev/oauth2-mailru/zipball/718b7b5db469cd98e4382051c6d8a540622ba11b",
+            "reference": "718b7b5db469cd98e4382051c6d8a540622ba11b",
+            "shasum": ""
+        },
+        "require": {
+            "league/oauth2-client": "^2.0",
+            "php": ">=5.5"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.3"
+        },
+        "time": "2017-03-25T09:47:46+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Aego\\OAuth2\\Client\\Provider\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alexey Rakeev",
+                "email": "alexey@rakeev.name"
+            }
+        ],
+        "description": "Mail.ru provider for league/oauth2-client"
+    },
+    {
+        "name": "ajgl/breakpoint-twig-extension",
+        "version": "0.3.4",
+        "version_normalized": "0.3.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ajgarlag/AjglBreakpointTwigExtension.git",
+            "reference": "13ee39406dc3d959c5704b462a3dbc3cbf088f16"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ajgarlag/AjglBreakpointTwigExtension/zipball/13ee39406dc3d959c5704b462a3dbc3cbf088f16",
+            "reference": "13ee39406dc3d959c5704b462a3dbc3cbf088f16",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6",
+            "twig/twig": "^1.14|^2.0"
+        },
+        "require-dev": {
+            "symfony/framework-bundle": "^2.7|^3.2|^4.1",
+            "symfony/phpunit-bridge": "^3.4|^4.1",
+            "symfony/twig-bundle": "^2.7|^3.2|^4.1"
+        },
+        "suggest": {
+            "ext-xdebug": "The Xdebug extension is required for the breakpoint to work",
+            "symfony/framework-bundle": "The framework bundle to integrate the extension into Symfony",
+            "symfony/twig-bundle": "The twig bundle to integrate the extension into Symfony"
+        },
+        "time": "2019-04-10T11:41:26+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Ajgl\\Twig\\Extension\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Antonio J. García Lagar",
+                "email": "aj@garcialagar.es",
+                "homepage": "http://aj.garcialagar.es",
+                "role": "developer"
+            }
+        ],
+        "description": "Twig extension to set breakpoints",
+        "homepage": "https://github.com/ajgarlag/AjglBreakpointTwigExtension",
+        "keywords": [
+            "Xdebug",
+            "breakpoint",
+            "twig"
+        ]
+    },
+    {
         "name": "asm89/stack-cors",
         "version": "1.2.0",
         "version_normalized": "1.2.0.0",
@@ -1592,6 +1752,215 @@
         ]
     },
     {
+        "name": "drupal/admin_toolbar",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/admin_toolbar.git",
+            "reference": "8.x-2.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.0.zip",
+            "reference": "8.x-2.0",
+            "shasum": "568de63dbaa8046a82d327dbd0b892ab79fb87aa"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0",
+                "datestamp": "1573751237",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Wilfrid Roze (eme)",
+                "homepage": "https://www.drupal.org/u/eme",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Romain Jarraud (romainj)",
+                "homepage": "https://www.drupal.org/u/romainj",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Adrian Cid Almaguer (adriancid)",
+                "homepage": "https://www.drupal.org/u/adriancid",
+                "email": "adriancid@gmail.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Mohamed Anis Taktak (matio89)",
+                "homepage": "https://www.drupal.org/u/matio89",
+                "role": "Maintainer"
+            },
+            {
+                "name": "fethi.krout",
+                "homepage": "https://www.drupal.org/user/3206765"
+            },
+            {
+                "name": "matio89",
+                "homepage": "https://www.drupal.org/user/2320090"
+            },
+            {
+                "name": "romainj",
+                "homepage": "https://www.drupal.org/user/370706"
+            }
+        ],
+        "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
+        "homepage": "http://drupal.org/project/admin_toolbar",
+        "keywords": [
+            "Drupal",
+            "Toolbar"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/admin_toolbar",
+            "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+        }
+    },
+    {
+        "name": "drupal/ajax_comments",
+        "version": "1.0.0-beta2",
+        "version_normalized": "1.0.0.0-beta2",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/ajax_comments.git",
+            "reference": "8.x-1.0-beta2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/ajax_comments-8.x-1.0-beta2.zip",
+            "reference": "8.x-1.0-beta2",
+            "shasum": "a63dbe780b4ef519e12812c7e220fea40e0e228e"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta2",
+                "datestamp": "1539817084",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "acouch",
+                "homepage": "https://www.drupal.org/user/151868"
+            },
+            {
+                "name": "danmuzyka",
+                "homepage": "https://www.drupal.org/user/48685"
+            },
+            {
+                "name": "formatC&#039;vt",
+                "homepage": "https://www.drupal.org/user/1853874"
+            },
+            {
+                "name": "muschpusch",
+                "homepage": "https://www.drupal.org/user/257634"
+            },
+            {
+                "name": "neochief",
+                "homepage": "https://www.drupal.org/user/233667"
+            },
+            {
+                "name": "qzmenko",
+                "homepage": "https://www.drupal.org/user/3220037"
+            },
+            {
+                "name": "rjbrown99",
+                "homepage": "https://www.drupal.org/user/367845"
+            }
+        ],
+        "description": "Module makes comments load without a page refresh via AJAX",
+        "homepage": "https://www.drupal.org/project/ajax_comments",
+        "support": {
+            "source": "https://git.drupalcode.org/project/ajax_comments"
+        }
+    },
+    {
+        "name": "drupal/components",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/components.git",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/components-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "72af8ff1ca842556ee4b95335595c24703acdb75"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1556870881",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "JohnAlbin",
+                "homepage": "https://www.drupal.org/user/32095"
+            },
+            {
+                "name": "RobLoach",
+                "homepage": "https://www.drupal.org/user/61114"
+            }
+        ],
+        "description": "Registers “component libraries” defined in modules and themes with the Twig system",
+        "homepage": "https://www.drupal.org/project/components",
+        "support": {
+            "source": "https://git.drupalcode.org/project/components"
+        }
+    },
+    {
         "name": "drupal/core",
         "version": "8.8.2",
         "version_normalized": "8.8.2.0",
@@ -1994,6 +2363,2305 @@
         "description": "Locked core dependencies; require this project INSTEAD OF drupal/core."
     },
     {
+        "name": "drupal/entity",
+        "version": "1.0.0-rc3",
+        "version_normalized": "1.0.0.0-RC3",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/entity.git",
+            "reference": "8.x-1.0-rc3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.0-rc3.zip",
+            "reference": "8.x-1.0-rc3",
+            "shasum": "6b4ccc0231c52ed9594502a0718057f53d98404d"
+        },
+        "require": {
+            "drupal/core": "^8.6"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-rc3",
+                "datestamp": "1559579884",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "RC releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "dawehner",
+                "homepage": "https://www.drupal.org/user/99340"
+            },
+            {
+                "name": "dixon_",
+                "homepage": "https://www.drupal.org/user/239911"
+            },
+            {
+                "name": "fago",
+                "homepage": "https://www.drupal.org/user/16747"
+            }
+        ],
+        "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
+        "homepage": "http://drupal.org/project/entity",
+        "support": {
+            "source": "https://git.drupalcode.org/project/entity"
+        }
+    },
+    {
+        "name": "drupal/field_group",
+        "version": "3.0.0",
+        "version_normalized": "3.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/field_group.git",
+            "reference": "8.x-3.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.0.zip",
+            "reference": "8.x-3.0",
+            "shasum": "8d87cdc4abc417aa4d411bffcaeb0a3ef1afa497"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-3.x": "3.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-3.0",
+                "datestamp": "1580250787",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Hydra",
+                "homepage": "https://www.drupal.org/user/647364"
+            },
+            {
+                "name": "Stalski",
+                "homepage": "https://www.drupal.org/user/322618"
+            },
+            {
+                "name": "jyve",
+                "homepage": "https://www.drupal.org/user/591438"
+            },
+            {
+                "name": "nils.destoop",
+                "homepage": "https://www.drupal.org/user/361625"
+            },
+            {
+                "name": "swentel",
+                "homepage": "https://www.drupal.org/user/107403"
+            }
+        ],
+        "description": "Provides the field_group module.",
+        "homepage": "https://www.drupal.org/project/field_group",
+        "support": {
+            "source": "https://git.drupalcode.org/project/field_group"
+        }
+    },
+    {
+        "name": "drupal/fivestar",
+        "version": "1.0.0-alpha1",
+        "version_normalized": "1.0.0.0-alpha1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/fivestar.git",
+            "reference": "8.x-1.0-alpha1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/fivestar-8.x-1.0-alpha1.zip",
+            "reference": "8.x-1.0-alpha1",
+            "shasum": "56cd67bb023c67f8736553fadcee825b78170929"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/votingapi": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha1",
+                "datestamp": "1579974481",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Alpha releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Alex Liannoy",
+                "homepage": "https://www.drupal.org/user/2415162"
+            },
+            {
+                "name": "Dave Reid",
+                "homepage": "https://www.drupal.org/user/53892"
+            },
+            {
+                "name": "dbt102",
+                "homepage": "https://www.drupal.org/user/338300"
+            },
+            {
+                "name": "eaton",
+                "homepage": "https://www.drupal.org/user/16496"
+            },
+            {
+                "name": "ericduran",
+                "homepage": "https://www.drupal.org/user/244460"
+            },
+            {
+                "name": "ezra-g",
+                "homepage": "https://www.drupal.org/user/69959"
+            },
+            {
+                "name": "fizk",
+                "homepage": "https://www.drupal.org/user/473174"
+            },
+            {
+                "name": "init90",
+                "homepage": "https://www.drupal.org/user/1322186"
+            },
+            {
+                "name": "quicksketch",
+                "homepage": "https://www.drupal.org/user/35821"
+            },
+            {
+                "name": "whiteph",
+                "homepage": "https://www.drupal.org/user/2769385"
+            }
+        ],
+        "description": "Enables fivestar ratings on content, users, etc.",
+        "homepage": "https://www.drupal.org/project/fivestar",
+        "support": {
+            "source": "https://git.drupalcode.org/project/fivestar"
+        }
+    },
+    {
+        "name": "drupal/flag",
+        "version": "4.0.0-beta1",
+        "version_normalized": "4.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/flag.git",
+            "reference": "8.x-4.0-beta1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/flag-8.x-4.0-beta1.zip",
+            "reference": "8.x-4.0-beta1",
+            "shasum": "a8873e368489f37b53e5ae8262a6e1ed7fdabea1"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "require-dev": {
+            "drupal/rules": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-4.x": "4.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-4.0-beta1",
+                "datestamp": "1572442085",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "fago",
+                "homepage": "https://www.drupal.org/user/16747"
+            },
+            {
+                "name": "fubhy",
+                "homepage": "https://www.drupal.org/user/761344"
+            },
+            {
+                "name": "joachim",
+                "homepage": "https://www.drupal.org/user/107701"
+            },
+            {
+                "name": "merlinofchaos",
+                "homepage": "https://www.drupal.org/user/26979"
+            },
+            {
+                "name": "mooffie",
+                "homepage": "https://www.drupal.org/user/78454"
+            },
+            {
+                "name": "quicksketch",
+                "homepage": "https://www.drupal.org/user/35821"
+            },
+            {
+                "name": "shabana.navas",
+                "homepage": "https://www.drupal.org/user/1311398"
+            },
+            {
+                "name": "socketwench",
+                "homepage": "https://www.drupal.org/user/65793"
+            }
+        ],
+        "description": "Create customized flags that users can set on entities.",
+        "homepage": "https://www.drupal.org/project/flag",
+        "support": {
+            "source": "https://git.drupalcode.org/project/flag"
+        }
+    },
+    {
+        "name": "drupal/fullcalendar_view",
+        "version": "2.6.0",
+        "version_normalized": "2.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/fullcalendar_view.git",
+            "reference": "8.x-2.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/fullcalendar_view-8.x-2.6.zip",
+            "reference": "8.x-2.6",
+            "shasum": "e6596e41ba73daa2d650b6ed0e0bfa25c0e92c46"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.6",
+                "datestamp": "1580427909",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Mingsong",
+                "homepage": "https://www.drupal.org/user/2986445"
+            }
+        ],
+        "description": "A view plugin to present contents in FullCalendar view",
+        "homepage": "https://www.drupal.org/project/fullcalendar_view",
+        "support": {
+            "source": "https://git.drupalcode.org/project/fullcalendar_view"
+        }
+    },
+    {
+        "name": "drupal/group",
+        "version": "1.0.0-rc5",
+        "version_normalized": "1.0.0.0-RC5",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/group.git",
+            "reference": "8.x-1.0-rc5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/group-8.x-1.0-rc5.zip",
+            "reference": "8.x-1.0-rc5",
+            "shasum": "234831baa8816d98d1093a37e5c66bb993a271eb"
+        },
+        "require": {
+            "drupal/core": "^8.6",
+            "drupal/entity": "^1.0-rc1"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-rc5",
+                "datestamp": "1576854190",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "RC releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Kristiaan Van den Eynde",
+                "homepage": "https://www.drupal.org/u/kristiaanvandeneynde",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Ronald te Brake",
+                "homepage": "https://www.drupal.org/u/ronaldtebrake",
+                "role": "Co-maintainer"
+            }
+        ],
+        "description": "This module allows you to group users, content and other entities",
+        "homepage": "http://drupal.org/project/group",
+        "support": {
+            "source": "https://git.drupalcode.org/project/group",
+            "issues": "https://drupal.org/project/issues/group"
+        }
+    },
+    {
+        "name": "drupal/inline_entity_form",
+        "version": "1.0.0-rc2",
+        "version_normalized": "1.0.0.0-RC2",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/inline_entity_form.git",
+            "reference": "8.x-1.0-rc2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc2.zip",
+            "reference": "8.x-1.0-rc2",
+            "shasum": "f56c071ef499c20f0b1d63fa1ea30f06248ee0a4"
+        },
+        "require": {
+            "drupal/core": "^8.5"
+        },
+        "require-dev": {
+            "drupal/entity_reference_revisions": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-rc2",
+                "datestamp": "1568446684",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "RC releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "dawehner",
+                "homepage": "https://www.drupal.org/user/99340"
+            },
+            {
+                "name": "geek-merlin",
+                "homepage": "https://www.drupal.org/user/229048"
+            },
+            {
+                "name": "joachim",
+                "homepage": "https://www.drupal.org/user/107701"
+            },
+            {
+                "name": "jsacksick",
+                "homepage": "https://www.drupal.org/user/972218"
+            },
+            {
+                "name": "kaythay",
+                "homepage": "https://www.drupal.org/user/2182186"
+            },
+            {
+                "name": "oknate",
+                "homepage": "https://www.drupal.org/user/471638"
+            },
+            {
+                "name": "rszrama",
+                "homepage": "https://www.drupal.org/user/49344"
+            },
+            {
+                "name": "slashrsm",
+                "homepage": "https://www.drupal.org/user/744628"
+            },
+            {
+                "name": "webflo",
+                "homepage": "https://www.drupal.org/user/254778"
+            }
+        ],
+        "description": "Provides a widget for inline management (creation, modification, removal) of referenced entities.",
+        "homepage": "https://www.drupal.org/project/inline_entity_form",
+        "support": {
+            "source": "https://git.drupalcode.org/project/inline_entity_form"
+        }
+    },
+    {
+        "name": "drupal/jsonapi_comment",
+        "version": "1.0.0-beta3",
+        "version_normalized": "1.0.0.0-beta3",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/jsonapi_comment.git",
+            "reference": "8.x-1.0-beta3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/jsonapi_comment-8.x-1.0-beta3.zip",
+            "reference": "8.x-1.0-beta3",
+            "shasum": "9b743e35424837f95744d91ebdc5028ab0f51fbb"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta3",
+                "datestamp": "1573772285",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Project has not opted into security advisory coverage!"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "gabesullice",
+                "homepage": "https://www.drupal.org/user/2287430"
+            }
+        ],
+        "description": "Provides routes and links that enhance comments over JSON:API",
+        "homepage": "https://www.drupal.org/project/jsonapi_comment",
+        "support": {
+            "source": "https://git.drupalcode.org/project/jsonapi_comment"
+        }
+    },
+    {
+        "name": "drupal/jsonapi_extras",
+        "version": "3.13.0",
+        "version_normalized": "3.13.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/jsonapi_extras.git",
+            "reference": "8.x-3.13"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/jsonapi_extras-8.x-3.13.zip",
+            "reference": "8.x-3.13",
+            "shasum": "b80179f01bf561d0d014ef8b452cc8b18c28b8ad"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/jsonapi": "*",
+            "e0ipso/shaper": "^1"
+        },
+        "require-dev": {
+            "drupal/jsonapi": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-3.x": "3.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-3.13",
+                "datestamp": "1576303987",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Mateu Aguiló Bosch",
+                "homepage": "https://www.drupal.org/user/550110",
+                "email": "mateu.aguilo.bosch@gmail.com"
+            },
+            {
+                "name": "Martin Kolar",
+                "homepage": "https://www.drupal.org/u/mkolar"
+            },
+            {
+                "name": "Karel Majzlik",
+                "homepage": "https://www.drupal.org/u/karlos007"
+            }
+        ],
+        "description": "JSON:API Extras provides a means to override and provide limited configurations to the default zero-configuration implementation provided by the JSON:API module.",
+        "homepage": "https://www.drupal.org/project/jsonapi_extras",
+        "support": {
+            "source": "https://git.drupalcode.org/project/jsonapi_extras"
+        }
+    },
+    {
+        "name": "drupal/jsonapi_hypermedia",
+        "version": "1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/jsonapi_hypermedia.git",
+            "reference": "8.x-1.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/jsonapi_hypermedia-8.x-1.5.zip",
+            "reference": "8.x-1.5",
+            "shasum": "c2d1f20150e909645c198d288eec5e5077cfa024"
+        },
+        "require": {
+            "drupal/core": "^8.8"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.5",
+                "datestamp": "1580498787",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Gabriel SULLICE",
+                "homepage": "https://www.drupal.org/user/3616626",
+                "email": "gabriel@sullice.com"
+            },
+            {
+                "name": "Wim Leers",
+                "homepage": "https://www.drupal.org/user/99777"
+            },
+            {
+                "name": "e0ipso",
+                "homepage": "https://www.drupal.org/user/550110"
+            },
+            {
+                "name": "gabesullice",
+                "homepage": "https://www.drupal.org/user/2287430"
+            },
+            {
+                "name": "zrpnr",
+                "homepage": "https://www.drupal.org/user/1448368"
+            }
+        ],
+        "description": "Complements the JSON API module with Hypermedia as the Engine of Application State",
+        "homepage": "https://www.drupal.org/project/jsonapi_hypermedia",
+        "support": {
+            "source": "https://git.drupalcode.org/project/jsonapi_hypermedia"
+        }
+    },
+    {
+        "name": "drupal/message",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/message.git",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/message-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "873b3d8030d47bd472d75472f293b7631a59eeaf"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "require-dev": {
+            "drupal/token": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1570139286",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Grayside",
+                "homepage": "https://www.drupal.org/user/346868"
+            },
+            {
+                "name": "RoySegall",
+                "homepage": "https://www.drupal.org/user/1812910"
+            },
+            {
+                "name": "amitaibu",
+                "homepage": "https://www.drupal.org/user/57511"
+            },
+            {
+                "name": "itamar",
+                "homepage": "https://www.drupal.org/user/1757910"
+            },
+            {
+                "name": "jhedstrom",
+                "homepage": "https://www.drupal.org/user/208732"
+            }
+        ],
+        "description": "Message",
+        "homepage": "https://www.drupal.org/project/message",
+        "support": {
+            "source": "https://git.drupalcode.org/project/message"
+        }
+    },
+    {
+        "name": "drupal/message_notify",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/message_notify.git",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/message_notify-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "b4d5c10d2242f36d69938fb7c3951f7607206988"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/message": "~1.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1570149785",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "RoySegall",
+                "homepage": "https://www.drupal.org/user/1812910"
+            },
+            {
+                "name": "amitaibu",
+                "homepage": "https://www.drupal.org/user/57511"
+            },
+            {
+                "name": "jhedstrom",
+                "homepage": "https://www.drupal.org/user/208732"
+            }
+        ],
+        "description": "Notification framework for the Message module",
+        "homepage": "https://drupal.org/project/message_notify",
+        "support": {
+            "source": "https://cgit.drupalcode.org/message_notify",
+            "issues": "https://drupal.org/project/issues/message_notify",
+            "irc": "irc://irc.freenode.org/drupal"
+        }
+    },
+    {
+        "name": "drupal/message_subscribe",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/message_subscribe.git",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/message_subscribe-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "e22526ef2d0db0657c35d256fdc09bb5e8724edd"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/flag": "~4.0",
+            "drupal/message": "~1.0",
+            "drupal/message_notify": "~1.0"
+        },
+        "require-dev": {
+            "drupal/flag": "*",
+            "drupal/message_subscribe_ui": "*",
+            "drupal/og": "~1.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1570212484",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "RoySegall",
+                "homepage": "https://www.drupal.org/user/1812910"
+            },
+            {
+                "name": "amitaibu",
+                "homepage": "https://www.drupal.org/user/57511"
+            },
+            {
+                "name": "fubhy",
+                "homepage": "https://www.drupal.org/user/761344"
+            },
+            {
+                "name": "jhedstrom",
+                "homepage": "https://www.drupal.org/user/208732"
+            }
+        ],
+        "description": "Subscription API for the Message and Message notify modules",
+        "homepage": "https://drupal.org/project/message_subscribe",
+        "support": {
+            "source": "https://cgit.drupalcode.org/message_subscribe",
+            "issues": "https://drupal.org/project/issues/message_subscribe",
+            "irc": "irc://irc.freenode.org/drupal"
+        }
+    },
+    {
+        "name": "drupal/og",
+        "version": "1.0.0-alpha4",
+        "version_normalized": "1.0.0.0-alpha4",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/og.git",
+            "reference": "8.x-1.0-alpha4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/og-8.x-1.0-alpha4.zip",
+            "reference": "8.x-1.0-alpha4",
+            "shasum": "4c49a23c77eb71694a21698bf5515d4310a85973"
+        },
+        "require": {
+            "drupal/core": "~8.7",
+            "php": ">=7.1.0"
+        },
+        "require-dev": {
+            "drupal/coder": "~8.2"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha4",
+                "datestamp": "1575878585",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Alpha releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Dries",
+                "homepage": "https://www.drupal.org/user/1"
+            },
+            {
+                "name": "Grayside",
+                "homepage": "https://www.drupal.org/user/346868"
+            },
+            {
+                "name": "RoySegall",
+                "homepage": "https://www.drupal.org/user/1812910"
+            },
+            {
+                "name": "Zen",
+                "homepage": "https://www.drupal.org/user/21209"
+            },
+            {
+                "name": "alesr",
+                "homepage": "https://www.drupal.org/user/150704"
+            },
+            {
+                "name": "amitaibu",
+                "homepage": "https://www.drupal.org/user/57511"
+            },
+            {
+                "name": "dww",
+                "homepage": "https://www.drupal.org/user/46549"
+            },
+            {
+                "name": "merlinofchaos",
+                "homepage": "https://www.drupal.org/user/26979"
+            },
+            {
+                "name": "moshe weitzman",
+                "homepage": "https://www.drupal.org/user/23"
+            },
+            {
+                "name": "mpp",
+                "homepage": "https://www.drupal.org/user/359881"
+            },
+            {
+                "name": "pfrenssen",
+                "homepage": "https://www.drupal.org/user/382067"
+            },
+            {
+                "name": "sethcohn",
+                "homepage": "https://www.drupal.org/user/14944"
+            }
+        ],
+        "description": "API to allow associating content with groups.",
+        "homepage": "https://drupal.org/project/og",
+        "support": {
+            "source": "https://git.drupalcode.org/project/og",
+            "issues": "https://drupal.org/project/issues/og",
+            "irc": "irc://irc.freenode.org/drupal-og",
+            "slack": "https://drupal.slack.com/messages/CELR48EA0"
+        }
+    },
+    {
+        "name": "drupal/poll",
+        "version": "1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/poll.git",
+            "reference": "8.x-1.3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/poll-8.x-1.3.zip",
+            "reference": "8.x-1.3",
+            "shasum": "c5b10aa20b18ee15338adbe6bebb1e50562d82f0"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.3",
+                "datestamp": "1574109481",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "adammalone",
+                "homepage": "https://www.drupal.org/user/1295980"
+            },
+            {
+                "name": "mqanneh",
+                "homepage": "https://www.drupal.org/user/2833163"
+            }
+        ],
+        "description": "Allows your site to capture votes on different topics in the form of multiple choice questions.",
+        "homepage": "https://www.drupal.org/project/poll",
+        "support": {
+            "source": "https://git.drupalcode.org/project/poll"
+        }
+    },
+    {
+        "name": "drupal/profile",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/profile.git",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "45f5ad7f274d5e1e7ec8b72d98f9a20136073112"
+        },
+        "require": {
+            "drupal/core": "^8.6",
+            "drupal/entity": "^1.0-rc2"
+        },
+        "require-dev": {
+            "drupal/token": "^1.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1567007888",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "daggerhart",
+                "homepage": "https://www.drupal.org/user/167806"
+            },
+            {
+                "name": "fago",
+                "homepage": "https://www.drupal.org/user/16747"
+            },
+            {
+                "name": "jsacksick",
+                "homepage": "https://www.drupal.org/user/972218"
+            },
+            {
+                "name": "mglaman",
+                "homepage": "https://www.drupal.org/user/2416470"
+            },
+            {
+                "name": "pcambra",
+                "homepage": "https://www.drupal.org/user/122101"
+            }
+        ],
+        "description": "Provides configurable user profiles.",
+        "homepage": "http://drupal.org/project/profile",
+        "support": {
+            "source": "https://git.drupalcode.org/project/profile"
+        }
+    },
+    {
+        "name": "drupal/radix",
+        "version": "4.7.0",
+        "version_normalized": "4.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/radix.git",
+            "reference": "8.x-4.7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/radix-8.x-4.7.zip",
+            "reference": "8.x-4.7",
+            "shasum": "05c5acdffe5004c04476e17fcf75ab22e4d8fb37"
+        },
+        "require": {
+            "drupal/components": "^1.0",
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-theme",
+        "extra": {
+            "branch-alias": {
+                "dev-4.x": "4.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-4.7",
+                "datestamp": "1580057581",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Drush\\Commands\\radix\\": "Commands/radix/"
+            }
+        },
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Arshad Chummun",
+                "homepage": "https://arshad.io",
+                "email": "arshad@chummun.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "dsnopek",
+                "homepage": "https://www.drupal.org/user/266527"
+            }
+        ],
+        "description": "Radix is a base theme for Drupal. It has Bootstrap, Sass, BrowserSync and Font Awesome built-in.",
+        "homepage": "https://www.drupal.org/project/radix",
+        "support": {
+            "source": "https://git.drupalcode.org/project/radix",
+            "issues": "https://www.drupal.org/project/issues/radix"
+        }
+    },
+    {
+        "name": "drupal/radix_layouts",
+        "version": "4.1.0",
+        "version_normalized": "4.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/radix_layouts.git",
+            "reference": "8.x-4.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/radix_layouts-8.x-4.1.zip",
+            "reference": "8.x-4.1",
+            "shasum": "c5aa0e5a72e13c2f163cc4a18d0816cb11018357"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-4.x": "4.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-4.1",
+                "datestamp": "1551641284",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "arshadcn",
+                "homepage": "https://www.drupal.org/user/571032"
+            },
+            {
+                "name": "dsnopek",
+                "homepage": "https://www.drupal.org/user/266527"
+            }
+        ],
+        "description": "Responsive layouts built on the Bootstrap 3 grid system.",
+        "homepage": "https://www.drupal.org/project/radix_layouts",
+        "support": {
+            "source": "https://git.drupalcode.org/project/radix_layouts"
+        }
+    },
+    {
+        "name": "drupal/rate",
+        "version": "1.0.0-alpha5",
+        "version_normalized": "1.0.0.0-alpha5",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/rate.git",
+            "reference": "8.x-1.0-alpha5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/rate-8.x-1.0-alpha5.zip",
+            "reference": "8.x-1.0-alpha5",
+            "shasum": "3d56906077d57344df10ec1cd8157d3e18540599"
+        },
+        "require": {
+            "drupal/core": "*",
+            "drupal/votingapi": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha5",
+                "datestamp": "1563467919",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Alpha releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "JordiK",
+                "homepage": "https://www.drupal.org/user/3472907"
+            },
+            {
+                "name": "Krzysztof Domański",
+                "homepage": "https://www.drupal.org/user/3572982"
+            },
+            {
+                "name": "brenk28",
+                "homepage": "https://www.drupal.org/user/65985"
+            },
+            {
+                "name": "kevin.dutra",
+                "homepage": "https://www.drupal.org/user/1312744"
+            },
+            {
+                "name": "mauritsl",
+                "homepage": "https://www.drupal.org/user/243897"
+            },
+            {
+                "name": "michaelmol",
+                "homepage": "https://www.drupal.org/user/919186"
+            }
+        ],
+        "description": "Flexible voting options for content entity types.",
+        "homepage": "https://www.drupal.org/project/rate",
+        "support": {
+            "source": "https://git.drupalcode.org/project/rate",
+            "issues": "https://www.drupal.org/project/issues/rate"
+        }
+    },
+    {
+        "name": "drupal/react_comments",
+        "version": "1.0.0-beta1",
+        "version_normalized": "1.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/react_comments.git",
+            "reference": "8.x-1.0-beta1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/react_comments-8.x-1.0-beta1.zip",
+            "reference": "8.x-1.0-beta1",
+            "shasum": "640283235b96de16999cfe805fb12de7a901c9d7"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta1",
+                "datestamp": "1545942480",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "elaman",
+                "homepage": "https://www.drupal.org/user/702414"
+            },
+            {
+                "name": "minnur",
+                "homepage": "https://www.drupal.org/user/702026"
+            },
+            {
+                "name": "void--",
+                "homepage": "https://www.drupal.org/user/2990569"
+            }
+        ],
+        "description": "Commenting system built with React",
+        "homepage": "https://www.drupal.org/project/react_comments",
+        "support": {
+            "source": "https://git.drupalcode.org/project/react_comments"
+        }
+    },
+    {
+        "name": "drupal/select2",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/select2.git",
+            "reference": "8.x-1.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/select2-8.x-1.6.zip",
+            "reference": "8.x-1.6",
+            "shasum": "02624ef158e3b2c876f4a75dd57692b2cd80156b"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "require-dev": {
+            "drupal/facets": "^1.4",
+            "drupal/form_options_attributes": "^1.0",
+            "drupal/search_api": "^1.10"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.6",
+                "datestamp": "1578484987",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Christian Fritsch",
+                "homepage": "https://www.drupal.org/user/1133806",
+                "email": "christian.fritsch@burda.com"
+            },
+            {
+                "name": "chr.fritsch",
+                "homepage": "https://www.drupal.org/user/2103716"
+            },
+            {
+                "name": "oushen",
+                "homepage": "https://www.drupal.org/user/1200780"
+            },
+            {
+                "name": "thunderbot",
+                "homepage": "https://www.drupal.org/user/3511180"
+            }
+        ],
+        "description": "Integration with the select2 JavaScript library.",
+        "homepage": "https://www.drupal.org/project/select2",
+        "support": {
+            "source": "https://git.drupalcode.org/project/select2"
+        }
+    },
+    {
+        "name": "drupal/shs",
+        "version": "1.0.0-alpha4",
+        "version_normalized": "1.0.0.0-alpha4",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/shs.git",
+            "reference": "8.x-1.0-alpha4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/shs-8.x-1.0-alpha4.zip",
+            "reference": "8.x-1.0-alpha4",
+            "shasum": "7c10a4ed872620ee05dbd082cc66021fc3ee3036"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "require-dev": {
+            "drupal/chosen": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha4",
+                "datestamp": "1536746285",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Alpha releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "jhedstrom",
+                "homepage": "https://www.drupal.org/user/208732"
+            },
+            {
+                "name": "stBorchert",
+                "homepage": "https://www.drupal.org/user/36942"
+            }
+        ],
+        "description": "Creates a simple hierarchical select widget for taxonomy fields.",
+        "homepage": "https://www.drupal.org/project/shs",
+        "support": {
+            "source": "https://git.drupalcode.org/project/shs"
+        }
+    },
+    {
+        "name": "drupal/social_api",
+        "version": "2.0.0-rc2",
+        "version_normalized": "2.0.0.0-RC2",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/social_api.git",
+            "reference": "8.x-2.0-rc2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/social_api-8.x-2.0-rc2.zip",
+            "reference": "8.x-2.0-rc2",
+            "shasum": "361f628679610e7eaac699562efb6d19a85772b9"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "league/oauth2-client": "^2.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0-rc2",
+                "datestamp": "1576820588",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "RC releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Getulio Sánchez (gvso)",
+                "homepage": "https://www.drupal.org/u/gvso",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Himansh Dixit (himanshu-dixit)",
+                "homepage": "https://www.drupal.org/user/3510098",
+                "email": "hudixt@gmail.com"
+            },
+            {
+                "name": "e0ipso",
+                "homepage": "https://www.drupal.org/user/550110"
+            },
+            {
+                "name": "gvso",
+                "homepage": "https://www.drupal.org/user/3101285"
+            },
+            {
+                "name": "himanshu-dixit",
+                "homepage": "https://www.drupal.org/user/3513954"
+            }
+        ],
+        "description": "Harmonizes social networking services in Drupal",
+        "homepage": "https://www.drupal.org/project/social_api",
+        "support": {
+            "source": "http://cgit.drupalcode.org/social_api",
+            "issues": "https://www.drupal.org/project/issues/social_api"
+        }
+    },
+    {
+        "name": "drupal/social_auth",
+        "version": "2.0.0-rc2",
+        "version_normalized": "2.0.0.0-RC2",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/social_auth.git",
+            "reference": "8.x-2.0-rc2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/social_auth-8.x-2.0-rc2.zip",
+            "reference": "8.x-2.0-rc2",
+            "shasum": "329c96d03f27b1f92577eb31cdad525f7d6a856e"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/social_api": "^2.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0-rc2",
+                "datestamp": "1576820588",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "RC releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Getulio Valentin Sánchez (gvso)",
+                "homepage": "https://www.drupal.org/user/3510098",
+                "email": "valentin2507@gmail.com"
+            },
+            {
+                "name": "Himansh Dixit (himanshu-dixit)",
+                "homepage": "https://www.drupal.org/user/550110",
+                "email": "hudixt@gmail.com"
+            },
+            {
+                "name": "gvso",
+                "homepage": "https://www.drupal.org/user/3101285"
+            },
+            {
+                "name": "himanshu-dixit",
+                "homepage": "https://www.drupal.org/user/3513954"
+            }
+        ],
+        "description": "Social Auth ",
+        "homepage": "https://www.drupal.org/project/social_auth",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/social_auth",
+            "issues": "https://www.drupal.org/project/issues/social_auth"
+        }
+    },
+    {
+        "name": "drupal/social_auth_facebook",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/social_auth_facebook.git",
+            "reference": "8.x-2.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/social_auth_facebook-8.x-2.0.zip",
+            "reference": "8.x-2.0",
+            "shasum": "755976c488bf585d29536adbc0a86427f5a3d6e7"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/social_auth": "^2.0",
+            "league/oauth2-facebook": "^2.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0",
+                "datestamp": "1577376483",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Getulio Valentin Sánchez (gvso)",
+                "homepage": "https://www.drupal.org/user/3509455",
+                "email": "valentin2507@gmail.com"
+            },
+            {
+                "name": "Utkarsh Dixit (denutkarsh)",
+                "homepage": "https://www.drupal.org/user/3510098",
+                "email": "downloadplaza97@gmail.com"
+            },
+            {
+                "name": "Himanshu Dixit (himanshu-dixit)",
+                "homepage": "https://www.drupal.org/user/3101285",
+                "email": "hudixt@gmail.com"
+            },
+            {
+                "name": "himanshu-dixit",
+                "homepage": "https://www.drupal.org/user/3513954"
+            }
+        ],
+        "description": "Social Auth integration for Facebook.",
+        "homepage": "https://www.drupal.org/project/social_auth_facebook",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/social_auth_facebook",
+            "issues": "https://www.drupal.org/project/issues/social_auth_facebook"
+        }
+    },
+    {
+        "name": "drupal/social_auth_github",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/social_auth_github.git",
+            "reference": "8.x-2.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/social_auth_github-8.x-2.0.zip",
+            "reference": "8.x-2.0",
+            "shasum": "a2a85ea0702d77b2eba3e8431b77adbba0ba31a7"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/social_auth": "^2.0",
+            "league/oauth2-github": "^2.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0",
+                "datestamp": "1577376786",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Getulio Valentin Sánchez (gvso)",
+                "homepage": "https://www.drupal.org/user/3509455",
+                "email": "valentin2507@gmail.com"
+            },
+            {
+                "name": "Himanshu Dixit (himanshu-dixit)",
+                "homepage": "https://www.drupal.org/user/3101285",
+                "email": "hudixt@gmail.com"
+            },
+            {
+                "name": "himanshu-dixit",
+                "homepage": "https://www.drupal.org/user/3513954"
+            }
+        ],
+        "description": "Social Auth integration for GitHub.",
+        "homepage": "https://www.drupal.org/project/social_auth_github",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/social_auth_github",
+            "issues": "https://www.drupal.org/project/issues/social_auth_github"
+        }
+    },
+    {
+        "name": "drupal/social_auth_google",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/social_auth_google.git",
+            "reference": "8.x-2.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/social_auth_google-8.x-2.0.zip",
+            "reference": "8.x-2.0",
+            "shasum": "0dde33a4faaa7fe22e073f536d3b2352dd31e2c0"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/social_auth": "^2.0",
+            "league/oauth2-google": "^3.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0",
+                "datestamp": "1576821488",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Getulio Valentin Sánchez (gvso)",
+                "homepage": "https://www.drupal.org/user/3101285",
+                "email": "valentin2507@gmail.com"
+            },
+            {
+                "name": "Himanshu Dixit (himanshu-dixit)",
+                "homepage": "https://www.drupal.org/user/3513954",
+                "email": "hudixt@gmail.com"
+            }
+        ],
+        "description": "Social Auth integration for Google.",
+        "homepage": "https://www.drupal.org/project/social_auth_google",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/social_auth_google",
+            "issues": "https://www.drupal.org/project/issues/social_auth_google"
+        }
+    },
+    {
+        "name": "drupal/social_auth_instagram",
+        "version": "2.0.0-beta3",
+        "version_normalized": "2.0.0.0-beta3",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/social_auth_instagram.git",
+            "reference": "8.x-2.0-beta3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/social_auth_instagram-8.x-2.0-beta3.zip",
+            "reference": "8.x-2.0-beta3",
+            "shasum": "f90b184ca9f84545801353f54a84dae7523f54e0"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/social_auth": "^2",
+            "league/oauth2-instagram": "^2.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0-beta3",
+                "datestamp": "1549561680",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Getulio Valentin Sánchez (gvso)",
+                "homepage": "https://www.drupal.org/user/3509455",
+                "email": "valentin2507@gmail.com"
+            },
+            {
+                "name": "Himanshu Dixit (himanshu-dixit)",
+                "homepage": "https://www.drupal.org/user/3101285",
+                "email": "hudixt@gmail.com"
+            },
+            {
+                "name": "himanshu-dixit",
+                "homepage": "https://www.drupal.org/user/3513954"
+            }
+        ],
+        "description": "Social Auth integration for Instagram.",
+        "homepage": "https://www.drupal.org/project/social_auth_instagram",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/social_auth_instagram",
+            "issues": "https://www.drupal.org/project/issues/social_auth_instagram"
+        }
+    },
+    {
+        "name": "drupal/social_auth_mailru",
+        "version": "dev-2.x",
+        "version_normalized": "dev-2.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/social_auth_mailru.git",
+            "reference": "3381486df4d786e42ddcdae450685d12c3a60090"
+        },
+        "require": {
+            "aego/oauth2-mailru": "^2.0",
+            "drupal/core": "~8.0",
+            "drupal/social_auth": "*"
+        },
+        "time": "2018-02-19T17:43:13+00:00",
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.x-dev",
+                "datestamp": "1519062480",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Project has not opted into security advisory coverage!"
+                }
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Getulio Valentin Sánchez (gvso)",
+                "homepage": "https://www.drupal.org/user/3509455",
+                "email": "valentin2507@gmail.com"
+            },
+            {
+                "name": "Himanshu Dixit (himanshu-dixit)",
+                "homepage": "https://www.drupal.org/user/3101285",
+                "email": "hudixt@gmail.com"
+            },
+            {
+                "name": "himanshu-dixit",
+                "homepage": "https://www.drupal.org/user/3513954"
+            }
+        ],
+        "description": "Social Auth integration for Mailru.",
+        "homepage": "https://www.drupal.org/project/social_auth_mailru",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/social_auth_mailru",
+            "issues": "https://www.drupal.org/project/issues/social_auth_mailru"
+        }
+    },
+    {
+        "name": "drupal/social_auth_twitter",
+        "version": "1.0.0-beta1",
+        "version_normalized": "1.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/social_auth_twitter.git",
+            "reference": "8.x-1.0-beta1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/social_auth_twitter-8.x-1.0-beta1.zip",
+            "reference": "8.x-1.0-beta1",
+            "shasum": "f4f5af9812bd1e29f5cfae6846e4ada8341045fe"
+        },
+        "require": {
+            "abraham/twitteroauth": "0.6.*",
+            "drupal/core": "~8.0",
+            "drupal/social_auth": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta1",
+                "datestamp": "1506655143",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Andriy Khomych",
+                "homepage": "https://www.drupal.org/user/3287133",
+                "email": "andriy.khomych@gmail.com"
+            },
+            {
+                "name": "Getulio Valentin Sánchez (gvso)",
+                "homepage": "https://www.drupal.org/user/3509455",
+                "email": "valentin2507@gmail.com"
+            },
+            {
+                "name": "Utkarsh Dixit (denutkarsh)",
+                "homepage": "https://www.drupal.org/user/3510098",
+                "email": "downloadplaza97@gmail.com"
+            },
+            {
+                "name": "gvso",
+                "homepage": "https://www.drupal.org/user/3101285"
+            },
+            {
+                "name": "himanshu-dixit",
+                "homepage": "https://www.drupal.org/user/3513954"
+            }
+        ],
+        "description": "Social Auth integration for Twitter",
+        "homepage": "https://www.drupal.org/sandbox/utkarsh-dixit/2841076",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/sandbox-utkarsh-dixit-2841076",
+            "issues": "https://www.drupal.org/project/issues/2841076"
+        }
+    },
+    {
+        "name": "drupal/token",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/token.git",
+            "reference": "8.x-1.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/token-8.x-1.6.zip",
+            "reference": "8.x-1.6",
+            "shasum": "22039a3d927220609e708932ac5c501b90ca4925"
+        },
+        "require": {
+            "drupal/core": "^8.7.7 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.6",
+                "datestamp": "1577708583",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9 || ^10"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "Dave Reid",
+                "homepage": "https://www.drupal.org/user/53892"
+            },
+            {
+                "name": "eaton",
+                "homepage": "https://www.drupal.org/user/16496"
+            },
+            {
+                "name": "fago",
+                "homepage": "https://www.drupal.org/user/16747"
+            },
+            {
+                "name": "greggles",
+                "homepage": "https://www.drupal.org/user/36762"
+            },
+            {
+                "name": "mikeryan",
+                "homepage": "https://www.drupal.org/user/4420"
+            }
+        ],
+        "description": "Provides a user interface for the Token API, some missing core tokens.",
+        "homepage": "https://www.drupal.org/project/token",
+        "support": {
+            "source": "https://git.drupalcode.org/project/token"
+        }
+    },
+    {
+        "name": "drupal/twig_xdebug",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/twig_xdebug.git",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/twig_xdebug-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "006f842aa8810a0e0d8e087cf73b400706f5c52b"
+        },
+        "require": {
+            "ajgl/breakpoint-twig-extension": "^0.3.4",
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1556130181",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "charginghawk",
+                "homepage": "https://www.drupal.org/user/2626341"
+            }
+        ],
+        "description": "Enables Xdebug breakpoints in Twig.",
+        "homepage": "https://www.drupal.org/project/twig_xdebug",
+        "support": {
+            "source": "https://git.drupalcode.org/project/twig_xdebug"
+        }
+    },
+    {
+        "name": "drupal/views_add_button",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/views_add_button.git",
+            "reference": "8.x-1.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/views_add_button-8.x-1.4.zip",
+            "reference": "8.x-1.4",
+            "shasum": "5853ec71f6b70b672444ebbc3f509d7f1141ec7b"
+        },
+        "require": {
+            "drupal/core": "*",
+            "drupal/token": "~1.5"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.4",
+                "datestamp": "1568009887",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Shawn2516",
+                "homepage": "https://www.drupal.org/user/3154563"
+            },
+            {
+                "name": "laboratory.mike",
+                "homepage": "https://www.drupal.org/user/131390"
+            }
+        ],
+        "description": "Views Add Button",
+        "homepage": "https://www.drupal.org/project/views_add_button",
+        "support": {
+            "source": "https://git.drupalcode.org/project/views_add_button",
+            "issues": "https://www.drupal.org/project/issues/search/views_add_button"
+        }
+    },
+    {
+        "name": "drupal/views_add_button_group",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/views_add_button_group.git",
+            "reference": "8.x-1.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/views_add_button_group-8.x-1.4.zip",
+            "reference": "8.x-1.4",
+            "shasum": "f48a134f532a1157f8a38cfecfbb124d298480f7"
+        },
+        "require": {
+            "drupal/core": "*",
+            "drupal/group": "*",
+            "drupal/views_add_button": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.4",
+                "datestamp": "1567491487",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "laboratory.mike",
+                "homepage": "https://www.drupal.org/user/131390"
+            }
+        ],
+        "description": "Enables add buttons for Groups and Group Content.",
+        "homepage": "https://www.drupal.org/project/views_add_button_group",
+        "support": {
+            "source": "https://git.drupalcode.org/project/views_add_button_group"
+        }
+    },
+    {
+        "name": "drupal/votingapi",
+        "version": "3.0.0-beta1",
+        "version_normalized": "3.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/votingapi.git",
+            "reference": "8.x-3.0-beta1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/votingapi-8.x-3.0-beta1.zip",
+            "reference": "8.x-3.0-beta1",
+            "shasum": "db3672346a25d6107d27a27f40abc03a38e3637f"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-3.x": "3.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-3.0-beta1",
+                "datestamp": "1540711680",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "eaton",
+                "homepage": "https://www.drupal.org/user/16496"
+            },
+            {
+                "name": "pedrorocha",
+                "homepage": "https://www.drupal.org/user/218937"
+            },
+            {
+                "name": "pifagor",
+                "homepage": "https://www.drupal.org/user/2375692"
+            },
+            {
+                "name": "torotil",
+                "homepage": "https://www.drupal.org/user/865256"
+            }
+        ],
+        "description": "Voting API",
+        "homepage": "http://drupal.org/project/votingapi",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/votingapi",
+            "issues": "http://drupal.org/project/issues/votingapi"
+        }
+    },
+    {
         "name": "drush/drush",
         "version": "10.2.1",
         "version_normalized": "10.2.1.0",
@@ -2123,6 +4791,50 @@
         ],
         "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
         "homepage": "http://www.drush.org"
+    },
+    {
+        "name": "e0ipso/shaper",
+        "version": "1.2.3",
+        "version_normalized": "1.2.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/e0ipso/shaper.git",
+            "reference": "04e17ee682d1a66726378d7d2c2a9a9b4d6984eb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/e0ipso/shaper/zipball/04e17ee682d1a66726378d7d2c2a9a9b4d6984eb",
+            "reference": "04e17ee682d1a66726378d7d2c2a9a9b4d6984eb",
+            "shasum": ""
+        },
+        "require": {
+            "justinrainbow/json-schema": "^5.2"
+        },
+        "require-dev": {
+            "php-coveralls/php-coveralls": "^2.0",
+            "phpunit/phpcov": "^5.0",
+            "phpunit/phpunit": "^7.0.2"
+        },
+        "time": "2019-07-27T10:13:44+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Shaper\\": "src",
+                "Shaper\\Tests\\": "tests/src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Mateu Aguiló Bosch",
+                "email": "mateu.aguilo.bosch@gmail.com"
+            }
+        ],
+        "description": "Lightweight library to handle in and out transformations in PHP."
     },
     {
         "name": "easyrdf/easyrdf",
@@ -2541,6 +5253,41 @@
         ]
     },
     {
+        "name": "jakeasmith/http_build_url",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jakeasmith/http_build_url.git",
+            "reference": "93c273e77cb1edead0cf8bcf8cd2003428e74e37"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jakeasmith/http_build_url/zipball/93c273e77cb1edead0cf8bcf8cd2003428e74e37",
+            "reference": "93c273e77cb1edead0cf8bcf8cd2003428e74e37",
+            "shasum": ""
+        },
+        "time": "2017-05-01T15:36:40+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/http_build_url.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jake A. Smith",
+                "email": "theman@jakeasmith.com"
+            }
+        ],
+        "description": "Provides functionality for http_build_url() to environments without pecl_http."
+    },
+    {
         "name": "jakub-onderka/php-console-color",
         "version": "v0.2",
         "version_normalized": "0.2.0.0",
@@ -2633,6 +5380,74 @@
         "description": "Highlight PHP code in terminal"
     },
     {
+        "name": "justinrainbow/json-schema",
+        "version": "5.2.9",
+        "version_normalized": "5.2.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/justinrainbow/json-schema.git",
+            "reference": "44c6787311242a979fa15c704327c20e7221a0e4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/44c6787311242a979fa15c704327c20e7221a0e4",
+            "reference": "44c6787311242a979fa15c704327c20e7221a0e4",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "~2.2.20||~2.15.1",
+            "json-schema/json-schema-test-suite": "1.2.0",
+            "phpunit/phpunit": "^4.8.35"
+        },
+        "time": "2019-09-25T14:49:45+00:00",
+        "bin": [
+            "bin/validate-json"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "JsonSchema\\": "src/JsonSchema/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bruno Prieto Reis",
+                "email": "bruno.p.reis@gmail.com"
+            },
+            {
+                "name": "Justin Rainbow",
+                "email": "justin.rainbow@gmail.com"
+            },
+            {
+                "name": "Igor Wiedler",
+                "email": "igor@wiedler.ch"
+            },
+            {
+                "name": "Robert Schönthal",
+                "email": "seroscho@googlemail.com"
+            }
+        ],
+        "description": "A library to validate a json schema.",
+        "homepage": "https://github.com/justinrainbow/json-schema",
+        "keywords": [
+            "json",
+            "schema"
+        ]
+    },
+    {
         "name": "league/container",
         "version": "2.4.1",
         "version_normalized": "2.4.1.0",
@@ -2697,6 +5512,296 @@
             "league",
             "provider",
             "service"
+        ]
+    },
+    {
+        "name": "league/oauth2-client",
+        "version": "2.4.1",
+        "version_normalized": "2.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thephpleague/oauth2-client.git",
+            "reference": "cc114abc622a53af969e8664722e84ca36257530"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thephpleague/oauth2-client/zipball/cc114abc622a53af969e8664722e84ca36257530",
+            "reference": "cc114abc622a53af969e8664722e84ca36257530",
+            "shasum": ""
+        },
+        "require": {
+            "guzzlehttp/guzzle": "^6.0",
+            "paragonie/random_compat": "^1|^2|^9.99",
+            "php": "^5.6|^7.0"
+        },
+        "require-dev": {
+            "eloquent/liberator": "^2.0",
+            "eloquent/phony-phpunit": "^1.0|^3.0",
+            "jakub-onderka/php-parallel-lint": "^0.9.2",
+            "phpunit/phpunit": "^5.7|^6.0",
+            "squizlabs/php_codesniffer": "^2.3|^3.0"
+        },
+        "time": "2018-11-22T18:33:57+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "League\\OAuth2\\Client\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alex Bilbie",
+                "email": "hello@alexbilbie.com",
+                "homepage": "http://www.alexbilbie.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Woody Gilk",
+                "homepage": "https://github.com/shadowhand",
+                "role": "Contributor"
+            }
+        ],
+        "description": "OAuth 2.0 Client Library",
+        "keywords": [
+            "Authentication",
+            "SSO",
+            "authorization",
+            "identity",
+            "idp",
+            "oauth",
+            "oauth2",
+            "single sign on"
+        ]
+    },
+    {
+        "name": "league/oauth2-facebook",
+        "version": "2.0.1",
+        "version_normalized": "2.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thephpleague/oauth2-facebook.git",
+            "reference": "bcbcd540fb66ae16b4f82671c8ae7752b6a89556"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thephpleague/oauth2-facebook/zipball/bcbcd540fb66ae16b4f82671c8ae7752b6a89556",
+            "reference": "bcbcd540fb66ae16b4f82671c8ae7752b6a89556",
+            "shasum": ""
+        },
+        "require": {
+            "league/oauth2-client": "^2.0",
+            "php": "^5.6 || ^7.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "~0.9",
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~2.0"
+        },
+        "time": "2017-07-22T01:25:00+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "League\\OAuth2\\Client\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Sammy Kaye Powers",
+                "email": "me@sammyk.me",
+                "homepage": "http://www.sammyk.me"
+            }
+        ],
+        "description": "Facebook OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+        "keywords": [
+            "Authentication",
+            "authorization",
+            "client",
+            "facebook",
+            "oauth",
+            "oauth2"
+        ]
+    },
+    {
+        "name": "league/oauth2-github",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thephpleague/oauth2-github.git",
+            "reference": "e63d64f3ec167c09232d189c6b0c397458a99357"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thephpleague/oauth2-github/zipball/e63d64f3ec167c09232d189c6b0c397458a99357",
+            "reference": "e63d64f3ec167c09232d189c6b0c397458a99357",
+            "shasum": ""
+        },
+        "require": {
+            "league/oauth2-client": "^2.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "~0.9",
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~2.0"
+        },
+        "time": "2017-01-26T01:14:51+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "League\\OAuth2\\Client\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Steven Maguire",
+                "email": "stevenmaguire@gmail.com",
+                "homepage": "https://github.com/stevenmaguire"
+            }
+        ],
+        "description": "Github OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+        "keywords": [
+            "authorisation",
+            "authorization",
+            "client",
+            "github",
+            "oauth",
+            "oauth2"
+        ]
+    },
+    {
+        "name": "league/oauth2-google",
+        "version": "3.0.2",
+        "version_normalized": "3.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thephpleague/oauth2-google.git",
+            "reference": "cfe9b0ae69eb5dbac64a282f04410b731f6b9c04"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thephpleague/oauth2-google/zipball/cfe9b0ae69eb5dbac64a282f04410b731f6b9c04",
+            "reference": "cfe9b0ae69eb5dbac64a282f04410b731f6b9c04",
+            "shasum": ""
+        },
+        "require": {
+            "league/oauth2-client": "^2.0"
+        },
+        "require-dev": {
+            "eloquent/phony-phpunit": "^2.0",
+            "php-coveralls/php-coveralls": "^2.1",
+            "phpunit/phpunit": "^6.0",
+            "squizlabs/php_codesniffer": "^2.0"
+        },
+        "time": "2019-11-16T14:11:06+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "League\\OAuth2\\Client\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Woody Gilk",
+                "email": "woody.gilk@gmail.com",
+                "homepage": "http://shadowhand.me"
+            }
+        ],
+        "description": "Google OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+        "keywords": [
+            "Authentication",
+            "authorization",
+            "client",
+            "google",
+            "oauth",
+            "oauth2"
+        ]
+    },
+    {
+        "name": "league/oauth2-instagram",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thephpleague/oauth2-instagram.git",
+            "reference": "abf6466ebd2c2a73e920b0ce834e2bf50d1abdcc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thephpleague/oauth2-instagram/zipball/abf6466ebd2c2a73e920b0ce834e2bf50d1abdcc",
+            "reference": "abf6466ebd2c2a73e920b0ce834e2bf50d1abdcc",
+            "shasum": ""
+        },
+        "require": {
+            "jakeasmith/http_build_url": "^1.0",
+            "league/oauth2-client": "^2.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "~0.9",
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~2.0"
+        },
+        "time": "2017-01-26T01:21:29+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "League\\OAuth2\\Client\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Steven Maguire",
+                "email": "stevenmaguire@gmail.com",
+                "homepage": "https://github.com/stevenmaguire"
+            }
+        ],
+        "description": "Instagram OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+        "keywords": [
+            "authorisation",
+            "authorization",
+            "client",
+            "instagram",
+            "oauth",
+            "oauth2"
         ]
     },
     {

@@ -1,0 +1,11 @@
+uuid: fcd686ac-6a0b-4262-97ab-7bb86acc443f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.activity
+id: node.activity
+target_entity_type_id: node
+target_bundle: activity
+default_langcode: site_default
+language_alterable: false

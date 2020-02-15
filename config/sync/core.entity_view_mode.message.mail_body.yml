@@ -1,0 +1,12 @@
+uuid: 09ce4ea4-d333-43eb-80e0-3a5443f9a055
+langcode: ru
+status: true
+dependencies:
+  module:
+    - message
+_core:
+  default_config_hash: uhACH_XKkZHCWXc_DdovxtfxI2sUKIFxn6Hnl7ZmQeU
+id: message.mail_body
+label: 'Текст оповещения'
+targetEntityType: message
+cache: true

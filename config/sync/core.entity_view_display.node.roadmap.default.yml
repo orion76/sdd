@@ -1,0 +1,38 @@
+uuid: 95bf5088-0175-4e4d-950c-ef52bd6b0238
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.roadmap.body
+    - field.field.node.roadmap.field_roadmap_section
+    - node.type.roadmap
+  module:
+    - text
+    - user
+id: node.roadmap.default
+targetEntityType: node
+bundle: roadmap
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_roadmap_section:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

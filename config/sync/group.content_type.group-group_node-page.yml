@@ -1,0 +1,19 @@
+uuid: 0b879be5-fb7a-457c-88a7-6cfa6359f5b9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.group
+    - node.type.page
+  module:
+    - gnode
+    - node
+id: group-group_node-page
+label: 'group: Group node (Страница)'
+description: 'Adds <em class="placeholder">Страница</em> content to groups both publicly and privately.'
+group_type: group
+content_plugin: 'group_node:page'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

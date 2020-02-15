@@ -1,0 +1,22 @@
+uuid: f907f311-a6ed-4e7c-9001-5edbf797f839
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.activity
+id: node.activity.status
+field_name: status
+entity_type: node
+bundle: activity
+label: Опубликовано
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

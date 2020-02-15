@@ -1,0 +1,29 @@
+.block--radix-sdd-content {
+
+
+  .views-row {
+    display: flex;
+    margin: 0 0 2em 0;
+
+    .activity-date {
+      .views-label{
+        color: #565;
+        font-weight: 700;
+      }
+      time {
+        display: block;
+      }
+
+      flex: 1;
+
+    }
+
+    .activity-content {
+      padding: 1em;
+      border-left: 1px solid #a55;
+      flex: 5;
+    }
+  }
+
+
+}

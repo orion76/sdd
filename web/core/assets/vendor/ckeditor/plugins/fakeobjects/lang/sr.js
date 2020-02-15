@@ -1,1 +1,0 @@
-﻿CKEDITOR.plugins.setLang("fakeobjects","sr",{anchor:"Сидро",flash:"Флеш анимација",hiddenfield:"Скривено полје",iframe:"IFrame",unknown:"Непознат објекат"});

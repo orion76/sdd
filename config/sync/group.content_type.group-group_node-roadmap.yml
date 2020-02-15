@@ -1,0 +1,19 @@
+uuid: adaf9322-daa9-453d-a926-cc852083ef47
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.group
+    - node.type.roadmap
+  module:
+    - gnode
+    - node
+id: group-group_node-roadmap
+label: 'group: Group node (Программа)'
+description: 'Adds <em class="placeholder">Программа</em> content to groups both publicly and privately.'
+group_type: group
+content_plugin: 'group_node:roadmap'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

@@ -1,0 +1,35 @@
+uuid: b5ce3ea3-de92-478b-94c0-c707a497b93f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.activity.body
+    - field.field.node.activity.field_date_end
+    - field.field.node.activity.field_date_start
+    - node.type.activity
+  module:
+    - text
+    - user
+id: node.activity.teaser
+targetEntityType: node
+bundle: activity
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_date_end: true
+  field_date_start: true
+  langcode: true

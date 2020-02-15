@@ -1,0 +1,23 @@
+uuid: a3d97c0b-cf3e-4251-bcb0-c219675d90af
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.discussion
+  module:
+    - text
+id: node.discussion.body
+field_name: body
+entity_type: node
+bundle: discussion
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

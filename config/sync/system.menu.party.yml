@@ -1,0 +1,8 @@
+uuid: 544f45b7-c9c0-42d1-9103-76f2b530ca2a
+langcode: ru
+status: true
+dependencies: {  }
+id: party
+label: Партия
+description: ''
+locked: false

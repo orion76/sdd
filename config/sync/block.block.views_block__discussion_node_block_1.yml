@@ -1,0 +1,42 @@
+uuid: b8856d66-1850-40ed-8709-b76188abdaba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.discussion_node
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - radix_sdd
+id: views_block__discussion_node_block_1
+theme: radix_sdd
+region: sidebar_right
+weight: 0
+provider: null
+plugin: 'views_block:discussion_node-block_1'
+settings:
+  id: 'views_block:discussion_node-block_1'
+  label: Обсуждение
+  provider: views
+  label_display: visible
+  views_label: Обсуждение
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      page: page
+      roadmap: roadmap
+      voting: voting
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

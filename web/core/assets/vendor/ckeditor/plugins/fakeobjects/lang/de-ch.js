@@ -1,1 +1,0 @@
-﻿CKEDITOR.plugins.setLang("fakeobjects","de-ch",{anchor:"Anker",flash:"Flash-Animation",hiddenfield:"Verstecktes Feld",iframe:"IFrame",unknown:"Unbekanntes Objekt"});

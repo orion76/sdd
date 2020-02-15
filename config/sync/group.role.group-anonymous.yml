@@ -1,0 +1,14 @@
+uuid: 2e52e9e7-f7a6-4f75-9e38-cd135980971c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.group
+id: group-anonymous
+label: Гость
+weight: -102
+internal: true
+audience: anonymous
+group_type: group
+permissions_ui: true
+permissions: {  }

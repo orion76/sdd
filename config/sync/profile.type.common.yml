@@ -1,0 +1,13 @@
+uuid: cc71a1d9-83ab-4d8d-a8bc-d84b16147afd
+langcode: ru
+status: true
+dependencies: {  }
+id: common
+label: Общий
+display_label: Общий
+multiple: true
+registration: true
+roles:
+  authenticated: authenticated
+allow_revisions: false
+new_revision: false

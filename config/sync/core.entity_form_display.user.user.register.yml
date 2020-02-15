@@ -1,0 +1,64 @@
+uuid: b9fedf12-627c-4503-96be-f384596c7d74
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.message_subscribe_email
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - profile
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: -10
+    region: content
+  common_profiles:
+    type: profile_form
+    weight: 90
+    settings:
+      form_mode: default
+    third_party_settings: {  }
+    region: content
+  contact:
+    weight: 5
+    region: content
+  language:
+    weight: 0
+    region: content
+  obschiy_profiles:
+    type: profile_form
+    weight: 90
+    settings:
+      form_mode: default
+    third_party_settings: {  }
+    region: content
+  timezone:
+    weight: 6
+    region: content
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    weight: -1
+    region: content
+hidden:
+  langcode: true
+  message_subscribe_email: true

@@ -13,6 +13,7 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'flag subscribe_node'
   - 'post comments'
   - 'restful delete comment'
   - 'restful get comment'
@@ -23,4 +24,5 @@ permissions:
   - 'restful put comment'
   - 'search content'
   - 'skip comment approval'
+  - 'unflag subscribe_node'
   - 'use text format basic_html'

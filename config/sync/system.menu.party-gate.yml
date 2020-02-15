@@ -1,0 +1,8 @@
+uuid: 4bf06d9a-3deb-4c56-86a6-4b41a907ce69
+langcode: ru
+status: true
+dependencies: {  }
+id: party-gate
+label: Партия(вход)
+description: ''
+locked: false

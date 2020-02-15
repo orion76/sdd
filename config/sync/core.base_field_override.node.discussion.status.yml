@@ -1,0 +1,22 @@
+uuid: 98ced097-b405-474f-8514-ec349766f1dc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.discussion
+id: node.discussion.status
+field_name: status
+entity_type: node
+bundle: discussion
+label: Опубликовано
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean
