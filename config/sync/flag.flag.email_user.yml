@@ -1,6 +1,6 @@
 uuid: 8fedf155-7cdf-48b6-be62-36e855eb3c10
 langcode: ru
-status: false
+status: true
 dependencies:
   module:
     - user

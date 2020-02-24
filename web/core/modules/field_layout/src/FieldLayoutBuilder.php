@@ -106,6 +106,10 @@ class FieldLayoutBuilder implements ContainerInjectionInterface {
         // avoids breaking hook_form_alter() implementations by not actually
         // moving the field in the form structure. If a #group is already set,
         // do not overwrite it.
+        if(!isset($field['region'])){
+          $n=0;
+          $field['region']='content';
+        }
         if (isset($regions[$field['region']]) && !isset($build[$name]['#group'])) {
           $build[$name]['#group'] = $field['region'];
         }

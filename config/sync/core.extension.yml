@@ -45,12 +45,18 @@ module:
   layout_discovery: 0
   link: 0
   locale: 0
+  media: 0
+  media_library: 0
   menu_ui: 0
   message: 0
   message_notify: 0
+  message_notify_ui: 0
+  message_send: 0
+  message_sender: 0
   message_subscribe: 0
   message_subscribe_email: 0
   message_subscribe_ui: 0
+  message_ui: 0
   node: 0
   options: 0
   page_cache: 0
@@ -58,7 +64,6 @@ module:
   path_alias: 0
   poll: 0
   profile: 0
-  quickedit: 0
   radix_layouts: 0
   rate: 0
   rdf: 0
@@ -80,7 +85,6 @@ module:
   toolbar: 0
   tour: 0
   tracker: 0
-  twig_xdebug: 0
   update: 0
   user: 0
   views_add_button: 0
@@ -97,6 +101,7 @@ theme:
   seven: 0
   radix: 0
   radix_sdd: 0
+  seven_sub: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

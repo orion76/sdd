@@ -8,8 +8,8 @@ dependencies:
     - profile.type.common
   module:
     - field_layout
+    - inline_entity_form
     - layout_discovery
-    - shs
 third_party_settings:
   field_layout:
     id: layout_onecol
@@ -23,22 +23,34 @@ content:
   field_location:
     weight: 26
     settings:
-      display_node_count: false
-      create_new_items: false
-      create_new_levels: false
-      force_deepest: false
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
-    type: options_shs
+    type: inline_entity_form_complex
     region: content
   field_profession:
     weight: 27
     settings:
-      display_node_count: false
-      create_new_items: false
-      create_new_levels: false
-      force_deepest: false
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
-    type: options_shs
+    type: inline_entity_form_complex
     region: content
 hidden:
   is_default: true

@@ -1,0 +1,11 @@
+fields:
+  'node:place_content:field_address:field_places': 'node:place_content:field_address:field_places'
+labels:
+  organization: 'Place name'
+  first_name: ''
+  last_name: ''
+vid: places
+address_field: field_address
+short_name_field: field_short_name
+sortable_name_field: field_sortable_name
+description_field: description

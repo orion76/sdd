@@ -24,5 +24,7 @@ permissions:
   - 'restful put comment'
   - 'search content'
   - 'skip comment approval'
+  - 'subscribe to newsletters'
   - 'unflag subscribe_node'
   - 'use text format basic_html'
+  - 'view media'

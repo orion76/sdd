@@ -1,0 +1,22 @@
+uuid: 213d16b2-907a-4096-8f5d-418646b35c8d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - seven_sub
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: seven_sub_help
+theme: seven_sub
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Справка
+  provider: help
+  label_display: '0'
+visibility: {  }

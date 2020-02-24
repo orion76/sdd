@@ -3,11 +3,11 @@ langcode: ru
 status: true
 dependencies: {  }
 id: common
-label: Общий
-display_label: Общий
+label: Профиль
+display_label: Профиль
 multiple: true
 registration: true
 roles:
   authenticated: authenticated
-allow_revisions: false
-new_revision: false
+allow_revisions: true
+new_revision: true

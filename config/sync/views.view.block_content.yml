@@ -54,8 +54,8 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Предыдущий'
-            next: 'Следующий ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'

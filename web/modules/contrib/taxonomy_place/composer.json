@@ -1,0 +1,11 @@
+{
+    "name": "drupal/taxonomy_place",
+    "type": "drupal-module",
+    "description": "Creates a Place taxonomy using Address module.",
+    "homepage": "https://www.drupal.org/project/taxonomy_place",
+    "license": "GPL-2.0+",
+    "require": {
+        "drupal/address": "^1.0"
+    },
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,20 @@
+uuid: 7c38201a-0f18-4e16-8fc4-6ccd86155bfe
+langcode: ru
+status: true
+dependencies:
+  module:
+    - message
+_core:
+  default_config_hash: J6utwjaG_iz0QV9MkVnJ9cKhIckPRIs1T6MYkCO9Ako
+id: message.field_published
+field_name: field_published
+entity_type: message
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

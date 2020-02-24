@@ -1,0 +1,23 @@
+uuid: ae85b5e2-c238-4e17-b823-144561444fba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_group_reference
+    - message.template.group_notify_node
+_core:
+  default_config_hash: 0cTAintjek5qx_L2bEMKEg_hsXXeBIXqpVPQ_EiHCWw
+id: message.group_notify_node.field_message_group_reference
+field_name: field_message_group_reference
+entity_type: message
+bundle: group_notify_node
+label: 'Message group reference'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings: {  }
+field_type: entity_reference

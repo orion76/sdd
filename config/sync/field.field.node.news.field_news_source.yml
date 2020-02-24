@@ -1,0 +1,23 @@
+uuid: 4a6d6e7d-da72-4ff9-985a-3fa366f6f8a1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_source
+    - node.type.news
+  module:
+    - link
+id: node.news.field_news_source
+field_name: field_news_source
+entity_type: node
+bundle: news
+label: Источник
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

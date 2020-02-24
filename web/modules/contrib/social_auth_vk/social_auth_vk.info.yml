@@ -1,0 +1,14 @@
+name: Social Auth Vkontakte
+description: Social Auth Vkontakte - Integration for vk.com
+# core: 8.x
+type: module
+package: Social
+configure: social_auth_vk.settings_form
+dependencies:
+  - social_auth
+
+# Information added by Drupal.org packaging script on 2017-06-02
+version: '8.x-1.0'
+core: '8.x'
+project: 'social_auth_vk'
+datestamp: 1496387045

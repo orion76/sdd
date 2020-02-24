@@ -767,7 +767,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Язык
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -1048,7 +1048,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Язык
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op

@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Contains taxonomy_place_example.install.
+ */
+
+/**
+ * Update place configuration.
+ */
+function taxonomy_place_example_install() {
+  if (!\Drupal::service('config.installer')->isSyncing() && \Drupal::moduleHandler()->moduleExists('taxonomy_place')) {
+    $settings = [
+      'fields' => [
+        'node:place_content:field_address:field_places' => 'node:place_content:field_address:field_places',
+      ],
+      'labels' => [
+        'organization' => 'Place name',
+        'first_name' => '',
+        'last_name' => '',
+      ],
+      'vid' => 'places',
+      'address_field' => 'field_address',
+      'short_name_field' => 'field_short_name',
+      'sortable_name_field' => 'field_sortable_name',
+      'description_field' => 'description',
+    ];
+    foreach ($settings as $key => $setting) {
+      \Drupal::configFactory()->getEditable('taxonomy_place.settings')->set($key, $setting)->save(TRUE);
+    }
+  }
+}

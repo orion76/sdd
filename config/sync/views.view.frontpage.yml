@@ -184,8 +184,8 @@ display:
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ Предыдущий'
-            next: 'Следующий ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
             first: '« First'
             last: 'Last »'
           quantity: 9

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains message_sender.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function message_sender_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the message_sender module.
+    case 'help.page.message_sender':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Message sender') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function message_sender_theme() {
+  return [
+    'message_sender' => [
+      'render element' => 'children',
+    ],
+  ];
+}

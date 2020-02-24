@@ -1,0 +1,4 @@
+seven-sub:
+  css:
+    component:
+      css/seven-sub.css: {}

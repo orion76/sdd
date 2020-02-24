@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies: {  }
+template: create_comment
+label: 'Create comment'
+description: 'Comment created.'
+text:
+  -
+    value: "[message:field_comment_reference:entity:author] commented on [message:field_comment_reference:entity:entity:content-type:name]: [message:field_comment_reference:entity:entity:title]\r\n"
+    format: plain_text
+  -
+    value: "<h2>New comment on [message:field_comment_reference:entity:entity:content-type:name]: [message:field_comment_reference:entity:entity:title]</h2>\r\n\r\n<p>[message:render-node:compact]</p>\r\n\r\n<p>[message:render-comment]</p>\r\n"
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

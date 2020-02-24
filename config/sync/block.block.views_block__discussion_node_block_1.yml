@@ -1,6 +1,6 @@
 uuid: b8856d66-1850-40ed-8709-b76188abdaba
 langcode: ru
-status: true
+status: false
 dependencies:
   config:
     - views.view.discussion_node

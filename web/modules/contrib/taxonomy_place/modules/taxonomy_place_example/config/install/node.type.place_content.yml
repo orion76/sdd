@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Place content'
+type: place_content
+description: 'Content that is linked to places in the Places vocabulary.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

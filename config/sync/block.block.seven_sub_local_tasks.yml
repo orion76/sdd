@@ -1,0 +1,22 @@
+uuid: 0b0df0f7-6bde-48d4-a219-aa5bd452d32e
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - seven_sub
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: seven_sub_local_tasks
+theme: seven_sub
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,30 @@
+uuid: ce5de319-c06a-49fe-8634-487feef69e11
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_subject
+    - field.field.message.group_notify_node.field_message_group_reference
+    - field.field.message.group_notify_node.field_node_reference
+    - field.field.message.group_notify_node.field_published
+    - message.template.group_notify_node
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.group_notify_node.mail_subject
+targetEntityType: message
+bundle: group_notify_node
+mode: mail_subject
+content:
+  partial_0:
+    weight: 0
+    region: content
+hidden:
+  field_message_group_reference: true
+  field_node_reference: true
+  field_published: true
+  partial_1: true

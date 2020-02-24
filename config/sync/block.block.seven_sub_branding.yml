@@ -1,0 +1,25 @@
+uuid: 6e0100ba-da90-432b-8855-d7354d04ca81
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seven_sub
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: seven_sub_branding
+theme: seven_sub
+region: sidebar_first
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Брендинг сайта'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

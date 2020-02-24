@@ -1,0 +1,30 @@
+uuid: 47bcd3e8-4df9-4421-8358-b5e54620347e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.menyu_category_root
+  module:
+    - system
+    - views
+  theme:
+    - seven_sub
+id: seven_sub_views_block__menyu_category_root_block_1
+theme: seven_sub
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:menyu_category_root-block_1'
+settings:
+  id: 'views_block:menyu_category_root-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/materials\r\n/materials/*"
+    negate: false
+    context_mapping: {  }

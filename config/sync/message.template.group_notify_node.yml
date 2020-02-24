@@ -1,0 +1,11 @@
+uuid: be94facc-d9de-4cef-8509-ad5ef17d9054
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VL7rgQTsZs-qYGEXQiWy45U_b_UtkL58Ft9ghjDSqD8
+template: group_notify_node
+label: 'Group notify - Node'
+description: 'Working upon creating or updating of a node.'
+text: {  }
+settings: {  }

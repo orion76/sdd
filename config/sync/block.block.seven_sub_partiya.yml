@@ -1,0 +1,38 @@
+uuid: a62e407f-7248-4062-8065-9a15707d05ba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.party
+  module:
+    - group
+    - system
+  theme:
+    - seven_sub
+id: seven_sub_partiya
+theme: seven_sub
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'system_menu_block:party'
+settings:
+  id: 'system_menu_block:party'
+  label: Партия
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  group_type:
+    id: group_type
+    group_types:
+      group: group
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'
+  request_path:
+    id: request_path
+    pages: "/party\r\n/party/*\r\n/group\r\n/group/*"
+    negate: false
+    context_mapping: {  }

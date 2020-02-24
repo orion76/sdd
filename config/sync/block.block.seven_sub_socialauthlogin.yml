@@ -1,0 +1,28 @@
+uuid: 7c8b25ca-9c7d-4ca8-9ba5-420704872103
+langcode: ru
+status: true
+dependencies:
+  module:
+    - social_auth
+    - user
+  theme:
+    - seven_sub
+id: seven_sub_socialauthlogin
+theme: seven_sub
+region: sidebar_first
+weight: -3
+provider: null
+plugin: social_auth_login
+settings:
+  id: social_auth_login
+  label: 'Войти через соц.сети'
+  provider: social_auth
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

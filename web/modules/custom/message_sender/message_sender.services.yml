@@ -1,0 +1,4 @@
+services:
+  plugin.manager.message_sender:
+    class: Drupal\message_sender\Plugin\MessageSenderManager
+    parent: default_plugin_manager

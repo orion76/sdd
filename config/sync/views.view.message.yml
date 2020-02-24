@@ -179,7 +179,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: 'С выделенным'
+          action_title: 'With selection'
           include_exclude: include
           selected_actions:
             - message_delete_action
@@ -192,7 +192,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: '№ сообщения'
+          label: 'Message ID'
           exclude: false
           alter:
             alter_text: false
@@ -323,7 +323,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Текст сообщения'
+          label: 'Message text'
           exclude: false
           alter:
             alter_text: false
@@ -438,7 +438,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Дата публикации'
+          label: 'Published date'
           exclude: false
           alter:
             alter_text: false
@@ -485,6 +485,12 @@ display:
           entity_type: message
           entity_field: created
           plugin_id: date
+        message_ui_contextual_links:
+          id: message_ui_contextual_links
+          table: message
+          field: message_ui_contextual_links
+          entity_type: message
+          label: Operations
       filters:
         template:
           id: template
@@ -499,7 +505,7 @@ display:
           exposed: true
           expose:
             operator_id: template_op
-            label: Шаблон
+            label: Template
             description: ''
             use_operator: false
             operator: template_op

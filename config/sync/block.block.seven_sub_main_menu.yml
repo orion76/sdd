@@ -1,0 +1,32 @@
+uuid: 20727e35-3d75-43bc-9cf7-8ba307ed6b2f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - seven_sub
+_core:
+  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
+id: seven_sub_main_menu
+theme: seven_sub
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основная навигация'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/party\r\n/party/*\r\n/group\r\n/group/*"
+    negate: true
+    context_mapping: {  }

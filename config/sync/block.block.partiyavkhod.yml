@@ -5,7 +5,6 @@ dependencies:
   config:
     - system.menu.party-gate
   module:
-    - group
     - system
   theme:
     - radix_sdd
@@ -29,10 +28,3 @@ visibility:
     pages: "/party\r\n/party/*\r\n/group\r\n/group/*"
     negate: true
     context_mapping: {  }
-  group_type:
-    id: group_type
-    group_types:
-      group: group
-    negate: false
-    context_mapping:
-      group: '@group.group_route_context:group'

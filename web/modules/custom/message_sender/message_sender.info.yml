@@ -1,0 +1,5 @@
+name: 'message_sender'
+type: module
+description: 'Message sender'
+core: 8.x
+package: 'message'
