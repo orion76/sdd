@@ -1,0 +1,18 @@
+uuid: 664d2035-a15e-43a5-80fa-f46558323554
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.party_activity
+id: node.party_activity.title
+field_name: title
+entity_type: node
+bundle: party_activity
+label: Наименование
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

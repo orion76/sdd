@@ -3,9 +3,9 @@ langcode: ru
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.statistics
     - node.type.discussion
   module:
+    - comment
     - node
     - user
     - views_add_button
@@ -56,10 +56,12 @@ display:
       style:
         type: default
       row:
-        type: 'entity:node'
+        type: fields
         options:
-          relationship: none
-          view_mode: statistics
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: true
       fields:
         title:
           id: title
@@ -108,6 +110,122 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        comment_count:
+          id: comment_count
+          table: comment_entity_statistics
+          field: comment_count
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ','
+          format_plural: false
+          format_plural_string: !!binary MQNAY291bnQD
+          prefix: ''
+          suffix: ''
+          plugin_id: numeric
+        new_comments:
+          id: new_comments
+          table: node
+          field: new_comments
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ','
+          format_plural: false
+          format_plural_string: !!binary MQNAY291bnQD
+          prefix: ''
+          suffix: ''
+          link_to_comment: true
+          entity_type: node
+          plugin_id: node_new_comments
       filters:
         status:
           value: '1'
@@ -162,9 +280,9 @@ display:
           empty: true
           tokenize: 1
           type: node+discussion
-          render_plugin: views_add_button_node
-          access_plugin: views_add_button_node
-          context: 'field_discussion_source={{ arguments.field_discussion_source_target_id }}'
+          render_plugin: views_add_button_discussion
+          access_plugin: views_add_button_discussion
+          context: '{{raw_arguments.field_discussion_source_target_id}}'
           button_text: Обсудить
           button_classes: 'button button-action button--primary button--small'
           button_attributes: ''
@@ -182,23 +300,13 @@ display:
           plugin_id: views_add_button_area
       footer: {  }
       empty: {  }
-      relationships:
-        reverse__node__field_discussion_source:
-          id: reverse__node__field_discussion_source
-          table: node_field_data
-          field: reverse__node__field_discussion_source
-          relationship: none
-          group_type: group
-          admin_label: field_discussion_source
-          required: true
-          entity_type: node
-          plugin_id: entity_reverse
+      relationships: {  }
       arguments:
         field_discussion_source_target_id:
           id: field_discussion_source_target_id
           table: node__field_discussion_source
           field: field_discussion_source_target_id
-          relationship: reverse__node__field_discussion_source
+          relationship: none
           group_type: group
           admin_label: ''
           default_action: default

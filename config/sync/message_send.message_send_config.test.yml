@@ -11,7 +11,7 @@ source:
     add: add
     update: update
   entity_type: node
-  bundle: activity
+  bundle: news
   properties:
     cid:
       value: hhh

@@ -34,7 +34,7 @@ content:
     region: content
   field_news_source:
     weight: 102
-    label: above
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -46,13 +46,13 @@ content:
     region: content
   flag_email_node:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true

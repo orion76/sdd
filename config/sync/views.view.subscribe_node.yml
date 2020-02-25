@@ -1,6 +1,6 @@
 uuid: 488f9d45-c8a5-478c-87f8-1396f77213e7
 langcode: ru
-status: true
+status: false
 dependencies:
   config:
     - flag.flag.subscribe_node
@@ -296,7 +296,7 @@ display:
           plugin_id: numeric
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

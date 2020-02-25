@@ -1,6 +1,6 @@
 uuid: 9e8708a8-8086-4a25-ab5a-81549a9d9fb9
 langcode: ru
-status: true
+status: false
 dependencies:
   config:
     - flag.flag.email_node
@@ -359,7 +359,7 @@ display:
           plugin_id: numeric
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains sdd.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function sdd_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the sdd module.
+    case 'help.page.sdd':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Helper site module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function sdd_theme() {
+  return [
+    'sdd' => [
+      'render element' => 'children',
+    ],
+  ];
+}

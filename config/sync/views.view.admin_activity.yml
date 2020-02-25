@@ -3,7 +3,7 @@ langcode: ru
 status: true
 dependencies:
   config:
-    - node.type.activity
+    - node.type.party_activity
     - system.menu.admin
     - user.role.manager
   module:
@@ -435,7 +435,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            activity: activity
+            party_activity: party_activity
           group: 1
           exposed: false
           expose:
@@ -495,7 +495,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: 0
-          type: node+activity
+          type: node+party_activity
           render_plugin: views_add_button_node
           access_plugin: views_add_button_node
           context: ''

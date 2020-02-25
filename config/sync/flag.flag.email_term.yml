@@ -1,6 +1,6 @@
 uuid: 16adc6b5-93eb-40fa-8abd-0969da3e3df1
 langcode: ru
-status: true
+status: false
 dependencies:
   module:
     - taxonomy

@@ -1,0 +1,18 @@
+uuid: 45dfb965-8588-4937-b9f7-039cb6f5f1fe
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Мероприятие(1)
+type: party_activity
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

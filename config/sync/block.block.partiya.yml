@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.party
   module:
+    - ctools
     - group
     - system
   theme:
@@ -36,3 +37,10 @@ visibility:
     pages: "/party\r\n/party/*\r\n/group\r\n/group/*"
     negate: false
     context_mapping: {  }
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      group: group
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

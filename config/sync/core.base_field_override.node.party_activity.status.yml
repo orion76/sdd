@@ -1,0 +1,22 @@
+uuid: 5450cb8d-fe52-422b-9994-38364a43b676
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.party_activity
+id: node.party_activity.status
+field_name: status
+entity_type: node
+bundle: party_activity
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

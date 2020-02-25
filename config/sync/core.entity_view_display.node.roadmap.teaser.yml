@@ -18,16 +18,18 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 0
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_roadmap_section: true
+  flag_email_node: true
+  flag_subscribe_node: true
   langcode: true

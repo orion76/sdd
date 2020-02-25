@@ -1,13 +1,9 @@
 uuid: d57e33fa-1f9e-4b7a-9905-4bddc09a98d0
 langcode: ru
-status: true
+status: false
 dependencies:
   module:
-    - message_subscribe_ui
     - node
-third_party_settings:
-  message_subscribe_ui:
-    view_name: 'subscribe_node_email:default'
 _core:
   default_config_hash: 2t9cwHg2SSy_5E2YoAgfYsnDvAytcY5q_ErdV_I4gYA
 id: subscribe_node

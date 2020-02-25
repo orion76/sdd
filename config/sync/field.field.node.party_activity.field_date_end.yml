@@ -1,0 +1,24 @@
+uuid: 5d0f24f7-0be9-4c65-8c40-ebfb0492f112
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_end
+    - node.type.party_activity
+  module:
+    - datetime
+id: node.party_activity.field_date_end
+field_name: field_date_end
+entity_type: node
+bundle: party_activity
+label: Окончание
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: relative
+    default_date: '+48 hours'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

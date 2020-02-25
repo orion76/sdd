@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.voting
-    - system.menu.main
   module:
     - node
     - user
@@ -217,7 +216,7 @@ display:
       display_extenders: {  }
       path: votings
       menu:
-        type: normal
+        type: none
         title: Голосования
         description: ''
         expanded: false

@@ -1,2 +1,25 @@
-// Page
-// -----------------------------------------------------------------------------
+.party-presentation{
+  background-color: #ef0;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.party-presentation__region {
+  text-align: center;
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.party-presentation__name {
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+.party-presentation__tagline {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 1em 0;
+}

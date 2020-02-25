@@ -1,11 +1,11 @@
 uuid: b8856d66-1850-40ed-8709-b76188abdaba
 langcode: ru
-status: false
+status: true
 dependencies:
   config:
     - views.view.discussion_node
   module:
-    - node
+    - ctools
     - system
     - views
   theme:
@@ -25,18 +25,18 @@ settings:
   items_per_page: none
   context_mapping: {  }
 visibility:
-  node_type:
-    id: node_type
+  request_path:
+    id: request_path
+    pages: "/activity\r\n/activity/*\r\n/news\r\n/news/*"
+    negate: false
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     bundles:
-      article: article
-      page: page
+      activity: activity
+      discussion: discussion
+      news: news
       roadmap: roadmap
-      voting: voting
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: true
-    context_mapping: {  }

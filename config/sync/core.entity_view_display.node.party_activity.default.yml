@@ -1,0 +1,55 @@
+uuid: 24993f37-307d-449b-a6cb-e19e30953cb6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.party_activity.body
+    - field.field.node.party_activity.field_date_end
+    - field.field.node.party_activity.field_date_start
+    - node.type.party_activity
+  module:
+    - datetime
+    - text
+    - user
+id: node.party_activity.default
+targetEntityType: node
+bundle: party_activity
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date_end:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_start:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  flag_email_node:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

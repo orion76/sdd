@@ -1,6 +1,6 @@
 uuid: 4b3f1a44-772b-483b-8a5d-6d14af37c683
 langcode: ru
-status: true
+status: false
 dependencies:
   module:
     - node

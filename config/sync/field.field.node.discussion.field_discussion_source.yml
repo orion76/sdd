@@ -6,13 +6,14 @@ dependencies:
     - field.storage.node.field_discussion_source
     - node.type.article
     - node.type.discussion
+    - node.type.news
     - node.type.roadmap
     - node.type.voting
 id: node.discussion.field_discussion_source
 field_name: field_discussion_source
 entity_type: node
 bundle: discussion
-label: Материал
+label: Источник
 description: ''
 required: false
 translatable: false
@@ -23,6 +24,7 @@ settings:
   handler_settings:
     target_bundles:
       voting: voting
+      news: news
       roadmap: roadmap
       article: article
     sort:
