@@ -1,0 +1,9 @@
+services:
+  sdd_jsonapi.resource_type.repository:
+    class: Drupal\jsonapi_extras\ResourceType\ConfigurableResourceTypeRepository
+    decorates: jsonapi.resource_type.repository
+    parent: jsonapi.resource_type.repository
+    calls:
+      - [setEntityRepository, ['@entity.repository']]
+      - [setEnhancerManager, ['@plugin.manager.resource_field_enhancer']]
+      - [setConfigFactory, ['@config.factory']]

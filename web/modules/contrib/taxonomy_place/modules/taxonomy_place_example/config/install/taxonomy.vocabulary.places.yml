@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Places
+vid: places
+description: 'Places where events happened.'
+weight: 0

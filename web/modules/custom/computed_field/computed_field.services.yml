@@ -1,0 +1,7 @@
+services:
+  plugin.manager.computed_field:
+    class: Drupal\computed_field\Plugin\ComputedFieldManager
+    parent: default_plugin_manager
+  plugin.manager.back_reference:
+    class: Drupal\computed_field\Plugin\BackReferenceFieldManager
+    parent: default_plugin_manager

@@ -1,0 +1,5 @@
+name: 'entity_prepopulate'
+type: module
+description: 'Prepopulate entity'
+core: 8.x
+package: 'entity'

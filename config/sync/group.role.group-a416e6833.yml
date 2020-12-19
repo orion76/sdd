@@ -1,0 +1,17 @@
+uuid: 587a5373-dd5c-4010-a955-ccfc4abbaf66
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.group
+  enforced:
+    config:
+      - user.role.administrator
+id: group-a416e6833
+label: Администратор
+weight: 2
+internal: true
+audience: outsider
+group_type: group
+permissions_ui: false
+permissions: {  }

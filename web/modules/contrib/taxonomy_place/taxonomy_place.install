@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains taxonomy_place.install.
+ */
+
+/**
+ * Notify user about configuration changes.
+ */
+function taxonomy_place_update_8001() {
+  $config_factory = \Drupal::configFactory();
+  $original = [
+    'core.entity_form_display.taxonomy_term.place.default',
+    'core.entity_view_display.taxonomy_term.place.default',
+    'field.field.taxonomy_term.place.field_geolocation',
+    'field.field.taxonomy_term.place.field_place',
+    'field.field.taxonomy_term.place.field_short_name',
+    'field.field.taxonomy_term.place.field_sortable_name',
+    'field.storage.taxonomy_term.field_geolocation',
+    'field.storage.taxonomy_term.field_place',
+    'field.storage.taxonomy_term.field_short_name',
+    'field.storage.taxonomy_term.field_sortable_name',
+    'taxonomy.vocabulary.place',
+  ];
+  foreach ($original as $item) {
+    if ($config = $config_factory->getEditable($item)) {
+      $messages[] = t('Place taxonomy is now stored in a separate module, which should only be needed on new installations that do not have another place taxonomy defined.');
+      $messages[] = t('Original configuration was NOT deleted because it may be in use on production sites. It can be manually deleted using `drush cdel`.');
+      return implode('</br>', $messages);
+    }
+  }
+}

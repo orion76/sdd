@@ -1,0 +1,13 @@
+{
+    "name": "backreference_flag",
+    "type": "drupal-module",
+    "description": "Plugin for field Backreference Flag",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/backreference_flag",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/backreference_flag",
+        "source": "http://cgit.drupalcode.org/backreference_flag"
+    }
+}

@@ -1,0 +1,13 @@
+{% embed '@radix/block/block.twig' with {
+  html_tag: 'div',
+  title_attributes: title_attributes.addClass('block__title')
+} %}
+
+  {% block content %}
+    <div {{ content_attributes.addClass('block__content') }}>
+      {{ content }}
+    </div>
+  {% endblock %}
+
+{% endembed %}
+

@@ -1,0 +1,5 @@
+name: 'backreference_flag'
+type: module
+description: 'Plugin for field Backreference Flag'
+core: 8.x
+package: 'computed_field'

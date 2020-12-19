@@ -1,0 +1,5 @@
+group_types:
+  - user_role
+status_message:
+  - on_failure
+default_test_mail: "admin@example.com"

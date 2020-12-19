@@ -1,0 +1,13 @@
+name: Social Auth Google
+type: module
+description: 'Social Auth integration for Google.'
+package: Social
+core: 8.x
+configure: social_auth_google.settings_form
+dependencies:
+  - social_auth:social_auth
+
+# Information added by Drupal.org packaging script on 2019-12-20
+version: '8.x-2.0'
+project: 'social_auth_google'
+datestamp: 1576821490

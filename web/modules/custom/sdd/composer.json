@@ -1,0 +1,13 @@
+{
+    "name": "sdd",
+    "type": "drupal-module",
+    "description": "Helper site module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/sdd",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/sdd",
+        "source": "http://cgit.drupalcode.org/sdd"
+    }
+}

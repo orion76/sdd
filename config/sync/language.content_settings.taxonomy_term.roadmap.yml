@@ -1,0 +1,11 @@
+uuid: fe7b9349-55e3-471b-9226-a1b71e41ba06
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.roadmap
+id: taxonomy_term.roadmap
+target_entity_type_id: taxonomy_term
+target_bundle: roadmap
+default_langcode: site_default
+language_alterable: false

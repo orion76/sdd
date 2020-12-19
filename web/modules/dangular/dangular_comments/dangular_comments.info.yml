@@ -1,0 +1,5 @@
+name: 'dangular_comments'
+type: module
+description: 'Angular Comment component'
+core: 8.x
+package: 'dangular'

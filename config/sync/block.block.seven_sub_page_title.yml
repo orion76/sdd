@@ -1,0 +1,27 @@
+uuid: fbbee801-438e-415e-9246-f4a8677d7443
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seven_sub
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: seven_sub_page_title
+theme: seven_sub
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок страницы'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

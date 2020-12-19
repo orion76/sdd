@@ -33,15 +33,15 @@
     {% endblock %}
   {% endembed %}
 
-  <main class="pt-5 pb-5">
+  <main class="main">
     {% if page.header %}
-      <header class="page__header mb-3">
-        <div class="container">
+      <header class="page__header">
+
           {{ page.header }}
-        </div>
+
       </header>
     {% endif %}
-    <div class="page-content container">
+    <div class="page-content">
       {% if page.sidebar_left %}
         <div class="page__sidebar_left">
 
@@ -65,12 +65,12 @@
   </main>
 
   {% if page.footer %}
-    <footer class="page__footer bg-dark">
-      <div class="container">
+    <footer class="page__footer">
+
         <div class="d-flex justify-content-md-between align-items-md-center">
           {{ page.footer }}
         </div>
-      </div>
+
     </footer>
   {% endif %}
 </div>

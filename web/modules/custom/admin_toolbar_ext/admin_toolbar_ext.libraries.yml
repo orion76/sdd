@@ -1,0 +1,10 @@
+admin_toolbar_ext:
+  version: VERSION
+  css:
+    theme:
+      css/admin_toolbar_ext.css: {}
+  js:
+    js/admin_toolbar_ext.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

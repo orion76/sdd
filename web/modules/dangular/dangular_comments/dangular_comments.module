@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Contains dangular_comments.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dangular_comments_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dangular_comments module.
+    case 'help.page.dangular_comments':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Angular Comment component') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dangular_comments_theme() {
+  return [
+    'dangular_comments' => [
+      'render element' => 'element',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_node_links_alter().
+ *
+ * @param array $links
+ * @param \Drupal\node\NodeInterface $node
+ * @param array $context
+ */
+function dangular_comments_node_links_alter(array &$links, NodeInterface $node, array &$context) {
+  if (isset($links['comment-forbidden'])) {
+//    \Drupal::service('dangular_comments.link_builder')->addSocialAuth($node, $links);
+  }
+}

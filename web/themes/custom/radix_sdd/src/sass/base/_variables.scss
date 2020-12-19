@@ -66,14 +66,22 @@ $colors: map-merge(
     $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary: #23840f !default;
+$secondary: #e09500 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
+
+$primary-light: lighten($primary, 7.5%);
+$primary-dark:  darken($primary, 7.5%);
+$secondary-light: lighten($secondary, 7.5%);
+$secondary-lighten: lighten($secondary, 15%);
+$secondary-dark:  darken($secondary, 7.5%);
+
+
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -289,7 +297,7 @@ $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
+$h2-font-size:                $font-size-base * 1.5 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
@@ -301,10 +309,10 @@ $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              null !default;
 
-$display1-size:               6rem !default;
-$display2-size:               5.5rem !default;
-$display3-size:               4.5rem !default;
-$display4-size:               3.5rem !default;
+$display1-size:               5rem !default;
+$display2-size:               4.5rem !default;
+$display3-size:               3.5rem !default;
+$display4-size:               2rem !default;
 
 $display1-weight:             300 !default;
 $display2-weight:             300 !default;

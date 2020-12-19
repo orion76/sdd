@@ -1,0 +1,23 @@
+uuid: 47a65f2e-6769-458c-89aa-a1d7ffe84190
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.party_activity
+  module:
+    - text
+id: node.party_activity.body
+field_name: body
+entity_type: node
+bundle: party_activity
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

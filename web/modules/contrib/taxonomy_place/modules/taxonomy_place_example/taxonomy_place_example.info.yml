@@ -1,0 +1,11 @@
+name: Taxonomy Place Example
+type: module
+description: "Example configuration, creates a Places taxonomy and Places content that references it."
+core: 8.x
+dependencies:
+  - taxonomy_place:taxonomy_place
+
+# Information added by Drupal.org packaging script on 2019-12-07
+version: '8.x-1.1'
+project: 'taxonomy_place'
+datestamp: 1575724084

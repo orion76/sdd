@@ -1,0 +1,11 @@
+uuid: 71159dba-9705-4be3-96d1-4ba0a0a1fc75
+langcode: ru
+status: true
+dependencies: {  }
+id: group
+label: group
+description: ''
+creator_membership: true
+creator_wizard: true
+creator_roles:
+  - group-party_administrator

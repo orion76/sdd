@@ -1,0 +1,92 @@
+message_send.field_select:
+  type: mapping;
+  mapping:
+    field_name:
+      type: string
+      label: 'Field name'
+    value:
+      type: string
+      label: 'Field value'
+    operator:
+      type: string
+      label: 'Operator'
+
+message_send.property_select:
+  type: mapping;
+  mapping:
+    property_name:
+      type: string
+      label: 'Property name'
+    value:
+      type: string
+      label: 'Property value'
+
+message_send.source_entity:
+  type: mapping
+  mapping:
+    events:
+      type: sequence
+      sequence:
+        type: string
+    entity_type:
+      type: string
+      label: 'Content entity type'
+    bundle:
+      type: string
+      label: 'Content entity type'
+    fields:
+      type: sequence
+      label: 'Fields conditions'
+      sequence:
+        type: message_send.field_select
+    properties:
+      type: sequence
+      label: 'Properties conditions'
+      sequence:
+        type: message_send.property_select
+
+message_send.send_settings:
+  type: mapping
+  mapping:
+    use_queue:
+      type: boolean
+
+message_send.recipient:
+  type: mapping
+  mapping:
+    views:
+      type: mapping
+      mapping:
+        id:
+          type: string
+        display:
+          type: string
+
+message_send.template:
+  type: mapping
+  mapping:
+    id:
+      type: string
+
+message_send.message_send_config.*:
+  type: config_entity
+  label: 'Message send config config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    source_entity:
+      type: message_send.source_entity
+      label: 'Views name for select content list'
+    template:
+      type: message_send.template
+    recipient:
+      type: message_send.recipient
+      label: 'Views name for select user list'
+    send:
+      type: message_send.send_settings

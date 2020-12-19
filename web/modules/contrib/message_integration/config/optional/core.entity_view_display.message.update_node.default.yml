@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.update_node.field_new_vid
+    - field.field.message.update_node.field_node_reference
+    - field.field.message.update_node.field_original_vid
+    - field.field.message.update_node.field_published
+    - message.template.update_node
+  module:
+    - user
+id: message.update_node.default
+targetEntityType: message
+bundle: update_node
+mode: default
+content:
+  field_new_vid:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_original_vid:
+    weight: 0
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  partial_1:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_node_reference: true
+  field_published: true
+  partial_0: true

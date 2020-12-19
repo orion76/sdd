@@ -1,0 +1,81 @@
+<?php
+
+
+/**
+ * @file
+ * Contains vote_result.module.
+ */
+
+use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\vote_result\VoteResComputedFields;
+
+/**
+ * Implements hook_help().
+ */
+function vote_result_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the vote_result module.
+    case 'help.page.vote_result':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Vote result entity') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function vote_result_theme() {
+  $theme = [];
+  $theme['vote_res'] = [
+    'render element' => 'elements',
+    'file' => 'vote_res.page.inc',
+    'template' => 'vote_res',
+  ];
+  $theme['vote_res_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'vote_res.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function vote_result_theme_suggestions_vote_res(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#vote_res'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'vote_res__' . $sanitized_view_mode;
+  $suggestions[] = 'vote_res__' . $entity->bundle();
+  $suggestions[] = 'vote_res__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'vote_res__' . $entity->id();
+  $suggestions[] = 'vote_res__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
+
+function vote_result_entity_bundle_field_info(EntityTypeInterface $entity_type, $bundle, array $base_field_definitions) {
+  $fields = [];
+  if ($entity_type->id() === 'vote_res') {
+    $fields['user_vote'] = VoteResComputedFields::UserVote($bundle);
+
+    /** @var $bundle_info  EntityTypeBundleInfoInterface */
+    $storage = Drupal::service('entity_type.manager')->getStorage('vote_res_type');
+    /** @var $definition \Drupal\vote_result\Entity\VoteResTypeInterface */
+    $definition = $storage->load($bundle);
+    if ($computed_fields = $definition->get('fields')) {
+      foreach ($computed_fields as $field_settings) {
+        $field_name = $field_settings['field_name'];
+        $fields[$field_name] = VoteResComputedFields::createVoteResult($bundle, $field_settings['result_function']);
+      }
+    }
+  }
+  return $fields;
+}

@@ -1,0 +1,26 @@
+administer message group notify:
+  title: Administer message group notify
+  description: Administer group types and per entity configuration.
+
+use message group notify:
+  title: Use message group notify
+  description: Send message notifications to groups.
+add message group entities:
+  title: 'Create new Message group entities'
+
+administer message group entities:
+  title: 'Administer Message group entities'
+  description: 'Allow to access the administration form to configure Message group entities.'
+  restrict access: true
+
+delete message group entities:
+  title: 'Delete Message group entities'
+
+edit message group entities:
+  title: 'Edit Message group entities'
+
+view published message group entities:
+  title: 'View published Message group entities'
+
+view unpublished message group entities:
+  title: 'View unpublished Message group entities'

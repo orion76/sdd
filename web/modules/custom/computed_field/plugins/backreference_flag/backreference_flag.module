@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains backreference_flag.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function backreference_flag_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the backreference_flag module.
+    case 'help.page.backreference_flag':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Plugin for field Backreference Flag') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function backreference_flag_theme() {
+  return [
+    'backreference_flag' => [
+      'render element' => 'children',
+    ],
+  ];
+}

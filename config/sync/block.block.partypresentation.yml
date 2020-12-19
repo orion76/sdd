@@ -1,0 +1,31 @@
+uuid: 318bc0c3-f0dd-47c8-ab32-24a69375a0f5
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1b7b90b8-b543-4147-b2ac-8ea194b2cafa'
+  module:
+    - block_content
+    - system
+  theme:
+    - radix_sdd
+id: partypresentation
+theme: radix_sdd
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:1b7b90b8-b543-4147-b2ac-8ea194b2cafa'
+settings:
+  id: 'block_content:1b7b90b8-b543-4147-b2ac-8ea194b2cafa'
+  label: Party-presentation
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

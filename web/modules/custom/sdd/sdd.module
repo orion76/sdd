@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Contains sdd.module.
+ */
+
+use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\vote_result\VoteResComputedFields;
+
+/**
+ * Implements hook_help().
+ */
+function sdd_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the sdd module.
+    case 'help.page.sdd':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Helper site module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function sdd_theme() {
+  return [
+    'sdd' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+function sdd_entity_bundle_field_info(EntityTypeInterface $entity_type, $bundle, array $base_field_definitions) {
+  $fields = [];
+  if ($entity_type->id() === 'user') {
+    $fields['avatar'] = BaseFieldDefinition::create('field_computed')
+      ->setLabel(t('Avatar'))
+      ->setSetting('plugin_id', 'user_avatar_url')
+      ->setDescription(t('The avatar image URL.'));
+  }
+  return $fields;
+}

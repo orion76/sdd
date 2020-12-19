@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.publish_node.field_node_reference
+    - field.field.message.publish_node.field_published
+    - message.template.publish_node
+  module:
+    - user
+id: message.publish_node.default
+targetEntityType: message
+bundle: publish_node
+mode: default
+content:
+  partial_1:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_node_reference: true
+  field_published: true
+  partial_0: true

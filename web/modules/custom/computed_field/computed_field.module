@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Contains computed_field.module.
+ */
+
+use Drupal\backreference_flag\Plugin\BackReference\Flag;
+use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\vote_result\VoteResComputedFields;
+
+/**
+ * Implements hook_help().
+ */
+function computed_field_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the computed_field module.
+    case 'help.page.computed_field':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Computed fields') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function ___computed_field_entity_bundle_field_info(EntityTypeInterface $entity_type, $bundle, array $base_field_definitions) {
+  $fields = [];
+  if ($entity_type->id() === 'vote_res') {
+    /** @var $bundle_info  EntityTypeBundleInfoInterface */
+    $storage = Drupal::service('entity_type.manager')->getStorage('vote_res_type');
+    /** @var $definition \Drupal\vote_result\Entity\VoteResTypeInterface */
+    $definition = $storage->load($bundle);
+    if ($computed_fields = $definition->get('fields')) {
+      foreach ($computed_fields as $field_settings) {
+        $field_name = $field_settings['field_name'];
+      }
+    }
+
+    $n = 0;
+  }
+  return $fields;
+}
+
+function computed_field_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if (in_array($entity_type->id(), ['__comment'], TRUE)) {
+    $fields['flags'] = Flag::createDefinition();
+    return $fields;
+//  return [];
+  }
+}
+

@@ -1,0 +1,10 @@
+field.widget.settings.entity_reference_view_widget:
+  type: mapping
+  label: 'Entity reference view widget widget settings'
+  mapping:
+    size:
+      type: integer
+      label: 'Size'
+    placeholder:
+      type: textfield
+      label: 'Placeholder'

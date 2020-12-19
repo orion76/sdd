@@ -1,0 +1,40 @@
+uuid: 3e656202-844a-4f3e-ab2b-a639b0fa4c0b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.party_activity.body
+    - field.field.node.party_activity.field_date_end
+    - field.field.node.party_activity.field_date_start
+    - node.type.party_activity
+  module:
+    - text
+    - user
+id: node.party_activity.teaser
+targetEntityType: node
+bundle: party_activity
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  flag_email_node:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_date_end: true
+  field_date_start: true
+  langcode: true

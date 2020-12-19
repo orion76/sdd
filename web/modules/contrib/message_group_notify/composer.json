@@ -1,0 +1,24 @@
+{
+  "name": "drupal/message_group_notify",
+  "type": "drupal-module",
+  "description": "Notifies groups on entity creation or update.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/message_group_notify",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/message_group_notify",
+    "source": "http://cgit.drupalcode.org/message_group_notify"
+  },
+  "require": {
+    "drupal/core": "~8.5",
+    "drupal/message": "~1.0",
+    "drupal/message_notify": "~1.0",
+    "drupal/token": "~1.1"
+  },
+  "suggest": {
+    "drupal/group": "for integration with Group",
+    "drupal/mailchimp": "for integration with Mailchimp",
+    "drupal/civicrm_entity": "for integration with CiviCRM"
+  }
+}

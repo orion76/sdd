@@ -1,0 +1,14 @@
+uuid: f4e5cac3-c3a3-4496-98f6-430436546753
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.group
+id: group-party_manager
+label: Менеджер
+weight: 5
+internal: false
+audience: member
+group_type: group
+permissions_ui: true
+permissions: {  }

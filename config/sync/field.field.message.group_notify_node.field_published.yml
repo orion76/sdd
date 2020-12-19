@@ -1,0 +1,25 @@
+uuid: 06aea057-cc9b-42de-a8e9-773afc200baf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_published
+    - message.template.group_notify_node
+_core:
+  default_config_hash: qZMfDJRFhAibFtq2p9mS1ZRs33ggEvFgr_Ow54ffPZU
+id: message.group_notify_node.field_published
+field_name: field_published
+entity_type: message
+bundle: group_notify_node
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

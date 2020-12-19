@@ -1,0 +1,17 @@
+services:
+  logger.channel.message_send:
+    parent: logger.channel_base
+    arguments: ['message_send']
+  message_send.service:
+    class: Drupal\message_send\MessageSendService
+    arguments: ['@entity_type.manager','@message_send.recipients_service','@plugin.manager.recipient_contact_factory','@plugin.manager.message_sender', '@queue', '@logger.factory']
+  message_send.entity_subscriber:
+    class: Drupal\message_send\EntitySubscriber
+    arguments: [ '@message_send.service','@message_send.recipients_service', '@config.factory']
+  plugin.manager.recipient_contact_factory:
+    class: Drupal\message_send\message\recipient_contact\RecipientContactFactoryManager
+    parent: default_plugin_manager
+  message_send.recipients_service:
+    class:  Drupal\message_send\message\recipient\RecipientsService
+    arguments: [ '@entity_type.manager']
+

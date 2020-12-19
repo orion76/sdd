@@ -1,0 +1,20 @@
+uuid: 73f00064-f71c-49fd-99a2-b2777cf507c7
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - seven_sub
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: seven_sub_local_actions
+theme: seven_sub
+region: content
+weight: -1
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  provider: core
+  label_display: '0'
+visibility: {  }

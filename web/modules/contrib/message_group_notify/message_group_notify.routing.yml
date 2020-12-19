@@ -1,0 +1,29 @@
+message_group_notify.settings:
+  path: '/admin/config/message/message_group_notify'
+  defaults:
+    _form: '\Drupal\message_group_notify\Form\SettingsForm'
+    _title: 'Message group notify settings'
+  requirements:
+    _permission: 'administer message group notify'
+  options:
+    _admin_route: TRUE
+
+entity.node.message_group_notify:
+ path: '/node/{node}/message_group_notify'
+ defaults:
+   _controller: '\Drupal\message_group_notify\Controller\NodeMessageController::messages'
+   _title: 'Notify groups and view sent messages'
+ requirements:
+   _message_group_notify_node_page_access: 'TRUE'
+   _permission: 'use message group notify'
+ options:
+   _node_operation_route: TRUE
+   _admin_route: TRUE
+
+entity.node_type.message_group_notify:
+  path: '/admin/structure/types/manage/{node_type}/message_group_notify'
+  defaults:
+    _title: 'Message group notify'
+    _form: '\Drupal\message_group_notify\Form\NodeTypeSettingsForm'
+  requirements:
+    _permission: 'administer message group notify'

@@ -1,0 +1,20 @@
+uuid: fe3e6ad9-7698-49ce-b3a5-88a1e1a3faa8
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_roadmap_section
+field_name: field_roadmap_section
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

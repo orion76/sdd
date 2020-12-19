@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Contains sdd_jsonapi.module.
+ */
+
+use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\vote_result\VoteResComputedFields;
+
+/**
+ * Implements hook_help().
+ */
+function sdd_jsonapi_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the sdd_jsonapi module.
+    case 'help.page.sdd_jsonapi':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Json API resources') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+//vote_result_title
+

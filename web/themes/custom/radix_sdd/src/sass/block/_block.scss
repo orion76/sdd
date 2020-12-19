@@ -1,0 +1,24 @@
+.block{
+  &__title{
+
+  }
+  &__content{
+
+  }
+}
+
+
+.page__sidebar_right{
+  .block{
+    &__title{
+
+    }
+    &__content{
+      padding: 1em;
+      background-color: #ffc;
+
+    }
+  }
+
+}
+

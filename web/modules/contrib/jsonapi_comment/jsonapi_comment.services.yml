@@ -1,0 +1,11 @@
+services:
+  jsonapi_comment.controller:
+    parent: jsonapi.entity_resource
+    class: Drupal\jsonapi_comment\Controller\JsonapiCommentController
+
+  paramconverter.jsonapi_comment.entity_uuid:
+    parent: paramconverter.jsonapi.entity_uuid
+    class: Drupal\jsonapi_comment\ParamConverter\JsonApiCommentEntityUuidConverter
+    tags:
+      # Priority 10, to ensure it runs before @paramconverter.entity.
+      - { name: paramconverter, priority: 10 }

@@ -1,0 +1,13 @@
+{
+    "name": "message_sender",
+    "type": "drupal-module",
+    "description": "Message sender",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/message_sender",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/message_sender",
+        "source": "http://cgit.drupalcode.org/message_sender"
+    }
+}

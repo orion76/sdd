@@ -1,0 +1,32 @@
+.toolbar .toolbar-menu-administration ul,
+.toolbar .toolbar-menu-administration ul li li.menu-item {
+  border: none; }
+
+.toolbar .toolbar-menu-administration ul li li.menu-item,
+.toolbar .toolbar-menu-administration ul li li.menu-item > a {
+  color: #fff; }
+
+.toolbar .toolbar-menu-administration ul li li.menu-item.hover-intent.menu-item--expanded {
+  background-color: #038; }
+
+.toolbar .toolbar-menu-administration ul li li.menu-item > a:hover {
+  background-color: #038;
+  text-decoration: none; }
+
+.toolbar .toolbar-menu-administration .menu-item,
+.toolbar .toolbar-menu-administration .menu-item:last-child {
+  border: none; }
+
+.toolbar .toolbar-menu-administration .menu-level-0 > .toolbar-menu,
+.toolbar .toolbar-menu-administration .menu-level-0 > .toolbar-menu > .menu-item--expanded {
+  background-color: #1a1a1a; }
+
+.toolbar .toolbar-menu-administration .menu-level-1 > .toolbar-menu,
+.toolbar .toolbar-menu-administration .menu-level-1 > .toolbar-menu > .menu-item--expanded {
+  background-color: #262626; }
+
+.toolbar .toolbar-menu-administration .menu-level-2 > .toolbar-menu {
+  background-color: #333333; }
+
+.toolbar .toolbar-menu-administration .menu-level-3 > .toolbar-menu {
+  background-color: #404040; }

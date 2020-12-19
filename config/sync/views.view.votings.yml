@@ -5,10 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.voting
-    - system.menu.main
   module:
     - node
     - user
+    - views_add_button
 id: votings
 label: Голосования
 module: views
@@ -165,17 +165,34 @@ display:
           granularity: second
       title: Голосования
       header:
-        area_text_custom:
-          id: area_text_custom
+        views_add_button:
+          id: views_add_button
           table: views
-          field: area_text_custom
+          field: views_add_button
           relationship: none
           group_type: group
           admin_label: ''
           empty: true
-          tokenize: false
-          content: "<ul class=\"action-links\">\r\n      <li><a href=\"/node/add/voting\" class=\"button button-action button--primary button--small\" data-drupal-link-system-path=\"node/add/voting\">Добавить голосование</a></li>\r\n</ul>"
-          plugin_id: text_custom
+          tokenize: 0
+          type: node+voting
+          render_plugin: views_add_button_node
+          access_plugin: views_add_button_node
+          context: ''
+          button_text: 'Добавить голосование'
+          button_classes: 'button button-action button--primary button--smal'
+          button_attributes: ''
+          button_access_denied:
+            value: ''
+            format: basic_html
+          button_prefix:
+            value: ''
+            format: basic_html
+          button_suffix:
+            value: ''
+            format: basic_html
+          query_string: voting
+          destination: 1
+          plugin_id: views_add_button_area
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -199,8 +216,8 @@ display:
       display_extenders: {  }
       path: votings
       menu:
-        type: normal
-        title: Голования
+        type: none
+        title: Голосования
         description: ''
         expanded: false
         parent: ''

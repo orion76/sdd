@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Contains message_send.module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\message_send\EntitySubscriber;
+
+/**
+ * Implements hook_help().
+ */
+function message_send_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the message_send module.
+    case 'help.page.message_send':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Message send customisable') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function message_send_theme() {
+  return [
+    'message_send' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_entity_insert().
+ *
+ * @param EntityInterface $entity
+ */
+function message_send_entity_insert(EntityInterface $entity) {
+  /** @var EntitySubscriber $subscriber */
+  $subscriber = \Drupal::service('message_send.entity_subscriber');
+  $subscriber->onCreate($entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ *
+ * @param EntityInterface $entity
+ */
+function message_send_entity_update(EntityInterface $entity) {
+  /** @var EntitySubscriber $subscriber */
+  $subscriber = \Drupal::service('message_send.entity_subscriber');
+  $subscriber->onUpdate($entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ *
+ * @param EntityInterface $entity
+ */
+function message_send_entity_delete(EntityInterface $entity) {
+  /** @var EntitySubscriber $subscriber */
+  $subscriber = \Drupal::service('message_send.entity_subscriber');
+  $subscriber->onDelete($entity);
+}

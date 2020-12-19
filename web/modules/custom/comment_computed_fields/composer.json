@@ -1,0 +1,13 @@
+{
+    "name": "comment_computed_fields",
+    "type": "drupal-module",
+    "description": "Comment computed fields",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/comment_computed_fields",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/comment_computed_fields",
+        "source": "http://cgit.drupalcode.org/comment_computed_fields"
+    }
+}

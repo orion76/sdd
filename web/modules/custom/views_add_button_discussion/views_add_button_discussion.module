@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains views_add_button_discussion.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function views_add_button_discussion_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the views_add_button_discussion module.
+    case 'help.page.views_add_button_discussion':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('views_add_button module plugin Add discussion') . '</p>';
+      return $output;
+
+    default:
+  }
+}

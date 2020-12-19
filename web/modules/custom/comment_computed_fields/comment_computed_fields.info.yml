@@ -1,0 +1,5 @@
+name: 'comment_computed_fields'
+type: module
+description: 'Comment computed fields'
+core: 8.x
+package: 'comment'

@@ -1,0 +1,11 @@
+uuid: 9fb6cda5-4bf9-42a5-88ee-601b47d48b02
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.party_activity
+id: node.party_activity
+target_entity_type_id: node
+target_bundle: party_activity
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,13 @@
+{
+    "name": "entity_prepopulate",
+    "type": "drupal-module",
+    "description": "Prepopulate entity",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/entity_prepopulate",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/entity_prepopulate",
+        "source": "http://cgit.drupalcode.org/entity_prepopulate"
+    }
+}

@@ -1,0 +1,42 @@
+sdd_jsonapi.current_user:
+  path: '/%jsonapi%/me'
+  defaults:
+    _jsonapi_resource: Drupal\sdd_jsonapi\Resource\CurrentUser
+  requirements:
+    _permission: 'access content'
+
+sdd_jsonapi.token:
+  path: '/%jsonapi%/token'
+  defaults:
+    _jsonapi_resource: Drupal\sdd_jsonapi\Resource\CSRFToken
+  requirements:
+    _permission: 'access content'
+
+sdd_jsonapi.vote.comment.node:
+  path: '/%jsonapi%/vote/comment/node/{node}'
+  defaults:
+    _jsonapi_resource: Drupal\sdd_jsonapi\Resource\LikeComment
+    _entity_type: 'node'
+  requirements:
+    _permission: 'access content'
+
+sdd_jsonapi.like.comment:
+  path: '/%jsonapi%/like/comment/{comment}'
+  defaults:
+    _jsonapi_resource: Drupal\sdd_jsonapi\Resource\LikeComment
+  requirements:
+    _permission: 'access content'
+
+sdd_jsonapi.like.node:
+  path: '/%jsonapi%/like/node/{node}'
+  defaults:
+    _jsonapi_resource: Drupal\sdd_jsonapi\Resource\LikeNode
+  requirements:
+    _permission: 'access content'
+
+sdd_jsonapi.like_result.node:
+  path: '/%jsonapi%/like-result/node/{node}'
+  defaults:
+    _jsonapi_resource: Drupal\sdd_jsonapi\Resource\LikeResultNode
+  requirements:
+    _permission: 'access content'

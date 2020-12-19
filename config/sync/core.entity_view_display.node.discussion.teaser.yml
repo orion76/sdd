@@ -1,0 +1,37 @@
+uuid: 3b0584f7-dc37-4506-b52b-ad1c76e492bd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.discussion.body
+    - field.field.node.discussion.field_discussion_comments
+    - field.field.node.discussion.field_discussion_source
+    - node.type.discussion
+  module:
+    - text
+    - user
+id: node.discussion.teaser
+targetEntityType: node
+bundle: discussion
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_discussion_comments: true
+  field_discussion_source: true
+  flag_email_node: true
+  flag_subscribe_node: true
+  langcode: true

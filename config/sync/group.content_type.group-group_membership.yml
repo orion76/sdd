@@ -1,0 +1,17 @@
+uuid: 815140e5-a5aa-427b-903b-1422ea59014b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.group
+  module:
+    - user
+id: group-group_membership
+label: 'group: Членство в группах'
+description: 'Adds users to groups as members.'
+group_type: group
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

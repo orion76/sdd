@@ -1,0 +1,13 @@
+{
+    "name": "vote_result",
+    "type": "drupal-module",
+    "description": "Vote result entity",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/vote_result",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/vote_result",
+        "source": "http://cgit.drupalcode.org/vote_result"
+    }
+}

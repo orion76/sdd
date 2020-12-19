@@ -1,0 +1,5 @@
+name: 'sdd_jsonapi'
+type: module
+description: 'Json API resources'
+core: 8.x
+package: 'jsonapi'

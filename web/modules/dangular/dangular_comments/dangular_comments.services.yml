@@ -1,0 +1,4 @@
+services:
+#  dangular_comments.link_builder:
+#    class: Drupal\dangular_comments\CommentLinkBuilder
+#    arguments: ['@module_handler', '@config.factory']

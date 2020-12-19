@@ -1,0 +1,5 @@
+entity.message_send_config.add_form:
+  route_name: entity.message_send_config.add_form
+  title: 'Add Message send config'
+  appears_on:
+    - entity.message_send_config.collection

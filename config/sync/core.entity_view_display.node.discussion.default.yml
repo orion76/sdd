@@ -1,0 +1,49 @@
+uuid: 213c226a-00ce-4cbc-87c4-793298794721
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.discussion.body
+    - field.field.node.discussion.field_discussion_comments
+    - field.field.node.discussion.field_discussion_source
+    - node.type.discussion
+  module:
+    - dangular_comments
+    - text
+    - user
+id: node.discussion.default
+targetEntityType: node
+bundle: discussion
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_discussion_comments:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: dangular_comments
+    region: content
+  field_discussion_source:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  flag_email_node: true
+  flag_subscribe_node: true
+  langcode: true

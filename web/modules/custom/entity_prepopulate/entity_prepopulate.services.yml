@@ -1,0 +1,4 @@
+services:
+  controller.entity_form:
+    class: Drupal\entity_prepopulate\Entity\EntityFormController
+    arguments: ['@http_kernel.controller.argument_resolver', '@form_builder', '@entity_type.manager']

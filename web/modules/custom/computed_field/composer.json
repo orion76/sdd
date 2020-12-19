@@ -1,0 +1,13 @@
+{
+    "name": "computed_field",
+    "type": "drupal-module",
+    "description": "Computed fields",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/computed_field",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/computed_field",
+        "source": "http://cgit.drupalcode.org/computed_field"
+    }
+}

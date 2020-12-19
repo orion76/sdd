@@ -1,1 +1,0 @@
-﻿CKEDITOR.plugins.setLang("fakeobjects","az",{anchor:"Lövbər",flash:"Flash animasiya",hiddenfield:"Gizli xana",iframe:"IFrame",unknown:"Tanımamış obyekt"});

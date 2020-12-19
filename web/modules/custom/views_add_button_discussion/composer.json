@@ -1,0 +1,13 @@
+{
+    "name": "views_add_button_discussion",
+    "type": "drupal-module",
+    "description": "views_add_button module plugin Add discussion",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/views_add_button_discussion",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/views_add_button_discussion",
+        "source": "http://cgit.drupalcode.org/views_add_button_discussion"
+    }
+}

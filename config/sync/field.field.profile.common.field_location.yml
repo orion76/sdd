@@ -1,0 +1,29 @@
+uuid: d3e79d17-c6b5-4bbc-82d0-64e1efaeedfc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_location
+    - profile.type.common
+    - taxonomy.vocabulary.location
+id: profile.common.field_location
+field_name: field_location
+entity_type: profile
+bundle: common
+label: 'Место жительства'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

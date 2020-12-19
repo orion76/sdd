@@ -7,7 +7,7 @@
  | for your application. See https://github.com/JeffreyWay/laravel-mix.
  |
  */
-const proxy = 'http://drupal.local';
+const proxy = 'http://ti-work.ru';
 const mix = require('laravel-mix');
 
 /*
@@ -15,12 +15,15 @@ const mix = require('laravel-mix');
  | Configuration
  |--------------------------------------------------------------------------
  */
+mix.webpackConfig({ devtool: "source-map" });
 mix
   .setPublicPath('assets')
   .disableNotifications()
   .options({
-    processCssUrls: false
-  });
+    processCssUrls: false,
+  })
+
+ ;
 
 /*
  |--------------------------------------------------------------------------
@@ -38,11 +41,11 @@ mix.browserSync({
  | SASS
  |--------------------------------------------------------------------------
  */
-mix.sass('src/sass/radix_sdd.style.scss', 'css');
+mix.sass('src/sass/radix_sdd.style.scss', 'css').sourceMaps();
 
 /*
  |--------------------------------------------------------------------------
  | JS
  |--------------------------------------------------------------------------
  */
-mix.js('src/js/radix_sdd.script.js', 'js');
+mix.js('src/js/radix_sdd.script.js', 'js').sourceMaps();

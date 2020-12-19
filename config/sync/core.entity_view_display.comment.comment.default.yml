@@ -14,6 +14,15 @@ targetEntityType: comment
 bundle: comment
 mode: default
 content:
+  child_count:
+    type: number_integer
+    weight: 3
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
   comment_body:
     label: hidden
     type: text_default
@@ -21,8 +30,27 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 100
+  is_root:
+    label: above
+    weight: 10
     region: content
+    settings:
+      format: true-false
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  rate_vote_widget:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  comment_child_count: true
   langcode: true
+  reverse_entity_reference: true

@@ -1,0 +1,14 @@
+dangular_comments:
+  js:
+
+    /libraries/dangular-comments/dist/runtime-es2015.js: { }
+#    /libraries/dangular-comments/dist/runtime-es5.js: { }
+    /libraries/dangular-comments/dist/polyfills-es2015.js: { }
+#    /libraries/dangular-comments/dist/polyfills-es5.js: { }
+
+    /libraries/dangular-comments/dist/scripts.js: { }
+    /libraries/dangular-comments/dist/main-es2015.js: { }
+#    /libraries/dangular-comments/dist/main-es5.js: { }
+  css:
+    component:
+      /libraries/dangular-comments/dist/styles.css: { }

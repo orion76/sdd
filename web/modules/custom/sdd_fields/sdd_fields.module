@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Contains sdd_fields.module.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\sdd_fields\VoteFields;
+
+/**
+ * Implements hook_help().
+ */
+function sdd_fields_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the sdd_fields module.
+    case 'help.page.sdd_fields':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function sdd_fields_theme() {
+  return [
+    'sdd_fields' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function sdd_fields_entity_bundle_field_info(EntityTypeInterface $entity_type, $bundle, array $base_field_definitions) {
+  $fields = [];
+  return $fields;
+}
+
+
+

@@ -1,0 +1,8 @@
+
+# Message send config menu items definition
+entity.message_send_config.collection:
+  title: 'Message send config'
+  route_name: entity.message_send_config.collection
+  description: 'List Message send config (bundles)'
+  parent: system.admin_structure
+  weight: 99

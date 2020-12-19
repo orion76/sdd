@@ -1,0 +1,8 @@
+
+# Vote result type menu items definition
+entity.vote_res_type.collection:
+  title: 'Vote result type'
+  route_name: entity.vote_res_type.collection
+  description: 'List Vote result type (bundles)'
+  parent: system.admin_structure
+  weight: 99

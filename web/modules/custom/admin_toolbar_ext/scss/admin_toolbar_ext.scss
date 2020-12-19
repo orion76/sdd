@@ -1,0 +1,57 @@
+$color-blue: #038;
+$color-white: #fff;
+$color-black: #000;
+$color-0: lighten($color-black, 10);
+$color-1: lighten($color-black, 15);
+$color-2: lighten($color-black, 20);
+$color-3: lighten($color-black, 25);
+$color-4: lighten($color-black, 50);
+
+.toolbar {
+
+  .toolbar-menu-administration {
+    ul,
+    ul li li.menu-item {
+      border: none;
+    }
+
+    ul li li.menu-item,
+    ul li li.menu-item > a {
+      color: $color-white;
+
+    }
+
+    ul li li.menu-item.hover-intent.menu-item--expanded {
+      background-color: $color-blue;
+    }
+
+    ul li li.menu-item > a:hover {
+      background-color: $color-blue;
+      text-decoration: none;
+    }
+
+    .menu-item,
+    .menu-item:last-child {
+      border: none;
+    }
+
+    .menu-level-0 > .toolbar-menu,
+    .menu-level-0 > .toolbar-menu > .menu-item--expanded {
+      background-color: $color-0;
+    }
+
+    .menu-level-1 > .toolbar-menu,
+    .menu-level-1 > .toolbar-menu > .menu-item--expanded {
+      background-color: $color-1;
+    }
+
+    .menu-level-2 > .toolbar-menu {
+      background-color: $color-2;
+    }
+
+    .menu-level-3 > .toolbar-menu {
+      background-color: $color-3;
+    }
+  }
+}
+

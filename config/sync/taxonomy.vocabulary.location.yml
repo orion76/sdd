@@ -1,0 +1,8 @@
+uuid: 95843518-6a50-4570-900e-66aca56aaa60
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Место жительства'
+vid: location
+description: ''
+weight: 0

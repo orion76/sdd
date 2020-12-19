@@ -1,0 +1,37 @@
+uuid: 1edc8337-b9d7-4416-8828-cc0fa5900ee4
+langcode: ru
+status: true
+dependencies: {  }
+id: test
+label: test
+template:
+  id: group_notify_node
+source:
+  events:
+    add: add
+    update: update
+  entity_type: node
+  bundle: news
+  properties:
+    cid:
+      value: hhh
+      operator: ''
+      field_name: cid
+    _add:
+      field_name: _add
+      value: ''
+      operator: ''
+  fields:
+    comment_body:
+      value: rrr
+      operator: ''
+      field_name: comment_body
+    _add:
+      field_name: _add
+      value: ''
+      operator: ''
+recipient:
+  views:
+    id: recipients_group
+    display: entity_ids_1
+send: null

@@ -1,0 +1,46 @@
+uuid: 4934869c-270c-43ae-a6f9-2b3a0332b3b6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.party
+  module:
+    - ctools
+    - group
+    - system
+  theme:
+    - radix_sdd
+id: partiya
+theme: radix_sdd
+region: navbar_branding
+weight: -5
+provider: null
+plugin: 'system_menu_block:party'
+settings:
+  id: 'system_menu_block:party'
+  label: Партия
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  group_type:
+    id: group_type
+    group_types:
+      group: group
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'
+  request_path:
+    id: request_path
+    pages: "/party\r\n/party/*\r\n/group\r\n/group/*"
+    negate: false
+    context_mapping: {  }
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      group: group
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

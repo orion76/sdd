@@ -1,0 +1,13 @@
+{
+    "name": "sdd_jsonapi",
+    "type": "drupal-module",
+    "description": "Json API resources",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/sdd_jsonapi",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/sdd_jsonapi",
+        "source": "http://cgit.drupalcode.org/sdd_jsonapi"
+    }
+}

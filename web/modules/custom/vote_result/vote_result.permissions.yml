@@ -1,0 +1,22 @@
+add vote result entities:
+  title: 'Create new Vote result entities'
+
+administer vote result entities:
+  title: 'Administer Vote result entities'
+  description: 'Allow to access the administration form to configure Vote result entities.'
+  restrict access: true
+
+delete vote result entities:
+  title: 'Delete Vote result entities'
+
+edit vote result entities:
+  title: 'Edit Vote result entities'
+
+view published vote result entities:
+  title: 'View published Vote result entities'
+
+view unpublished vote result entities:
+  title: 'View unpublished Vote result entities'
+
+permission_callbacks:
+  - \Drupal\vote_result\VoteResPermissions::generatePermissions

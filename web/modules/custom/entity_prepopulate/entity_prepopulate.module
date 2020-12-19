@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains entity_prepopulate.module.
+ */
+
+use Drupal\Core\Entity\FieldableEntityInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function entity_prepopulate_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the entity_prepopulate module.
+    case 'help.page.entity_prepopulate':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Prepopulate entity') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function entity_prepopulate_entity_field_values_init(FieldableEntityInterface $entity) {
+//  if ($entity instanceof ContentEntityInterface) {
+//    $routeMath = \Drupal::routeMatch();
+//    $test=$routeMath->getRouteName();
+//    $test1=$routeMath->getRouteObject();
+//    $test1->getOptions();
+////    $router=$request->
+////    $query=$request->get('populate');
+//    $entity->set('title','value');
+//    $n=0;
+//  }
+}

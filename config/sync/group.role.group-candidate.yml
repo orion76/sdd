@@ -1,0 +1,14 @@
+uuid: 82e31eac-7be1-41c5-8728-ce7d351f288b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.group
+id: group-candidate
+label: Кандидат
+weight: 7
+internal: false
+audience: member
+group_type: group
+permissions_ui: true
+permissions: {  }

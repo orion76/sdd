@@ -1,0 +1,13 @@
+{
+    "name": "message_send",
+    "type": "drupal-module",
+    "description": "Message send customisable",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/message_send",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/message_send",
+        "source": "http://cgit.drupalcode.org/message_send"
+    }
+}

@@ -1,0 +1,145 @@
+<?php
+
+/**
+ * @file
+ * Contains comment_computed_fields.module.
+ */
+
+use Drupal\comment\CommentInterface;
+use Drupal\comment_computed_fields\CommentCacheTagsFactory;
+use Drupal\comment_computed_fields\Plugin\Field\FieldType\CommentChildrenCountItem;
+use Drupal\Core\Cache\Cache;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function comment_computed_fields_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the comment_computed_fields module.
+    case 'help.page.comment_computed_fields':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Comment computed fields') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function comment_computed_fields_theme() {
+  return [
+    'comment_computed_fields' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function comment_computed_fields_entity_base_field_info(EntityTypeInterface $entity_type) {
+  $fields = [];
+  if ($entity_type->id() === 'comment') {
+    $fields['child_count'] = BaseFieldDefinition::create('integer')
+      ->setName('children_count')
+      ->setLabel(t('Children count'))
+      ->setDescription(t('Comment children count'))
+      ->setClass(CommentChildrenCountItem::class)
+      ->setCardinality(1)
+      ->setTranslatable(FALSE)
+      ->setRevisionable(FALSE)
+      ->setSetting('unsigned', TRUE)
+      ->setComputed(TRUE);
+
+
+    $fields['is_root'] = BaseFieldDefinition::create('boolean')
+      ->setLabel(t('Is root'))
+      ->setDescription(t('A flag indicating whether this is the default translation.'))
+      ->setTranslatable(TRUE)
+      ->setRevisionable(TRUE)
+      ->setDisplayOptions('view', [
+        'label' => 'inline',
+        'weight' => 10,
+      ])
+      ->setDisplayConfigurable('view', TRUE);
+  }
+
+  return $fields;
+}
+
+function comment_computed_fields_field_formatter_info_alter(array &$info) {
+
+  // Let a new field type re-use an existing formatter.
+  //  $info['number_integer']['field_types'][] = 'comment_child_count';
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ */
+function comment_computed_fields_comment_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  if ($entity->bundle() === 'comment') {
+    $entity->set('is_root', empty($entity->get('pid')->getValue()));
+//    $cache_tag=CommentCacheTagsFactory::ChildAdded($entity);
+//    $entity->addCacheTags([$cache_tag]);
+
+  }
+
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ *
+ * @param \Drupal\comment\CommentInterface $comment
+ */
+function comment_computed_fields_comment_insert(CommentInterface $comment) {
+  if ($comment->bundle() === 'comment') {
+
+    if ($parent = $comment->getParentComment()) {
+      $parent_cache_tag=CommentCacheTagsFactory::ChildAdded($parent);
+      Cache::invalidateTags([$parent_cache_tag]);
+    }
+
+  }
+}
+
+function comment_computed_fields_comment_storage_load(array $entities) {
+  foreach ($entities as $comment) {
+    $self_cache_tag=CommentCacheTagsFactory::ChildAdded($comment);
+    $comment->addCacheTags([$self_cache_tag]);
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ */
+function comment_computed_fields_node_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  if ($entity->bundle() === 'discussion') {
+//    $cache_tag = "comment_child:added:" . $entity->id();
+//    $entity->addCacheTags([$cache_tag]);
+  }
+}
+
+/**
+ * Acts when creating a new entity of a specific type.
+ *
+ * This hook runs after a new entity object has just been instantiated.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ *   The entity object.
+ *
+ * @ingroup entity_crud
+ * @see hook_entity_create()
+ */
+function comment_computed_fields_comment_create(EntityInterface $entity) {
+  if ($entity->bundle() === 'comment') {
+    $entity->set('is_root', empty($entity->get('pid')->getValue()));
+  }
+}

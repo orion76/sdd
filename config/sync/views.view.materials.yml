@@ -1,6 +1,6 @@
 uuid: 8d5d0da8-c3f9-48dd-8834-05687fbd5e10
 langcode: ru
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -10,6 +10,7 @@ dependencies:
   module:
     - node
     - user
+    - views_add_button
 id: materials
 label: Материалы
 module: views
@@ -189,17 +190,34 @@ display:
           plugin_id: standard
       title: Материалы
       header:
-        area_text_custom_1:
-          id: area_text_custom_1
+        views_add_button:
+          id: views_add_button
           table: views
-          field: area_text_custom
+          field: views_add_button
           relationship: none
           group_type: group
           admin_label: ''
-          empty: true
-          tokenize: false
-          content: "<ul class=\"action-links\">\r\n      <li><a href=\"/node/add/article\" class=\"button button-action button--primary button--small\" data-drupal-link-system-path=\"node/add/article\">Добавить материал</a></li>\r\n</ul>"
-          plugin_id: text_custom
+          empty: false
+          tokenize: 0
+          type: node+article
+          render_plugin: views_add_button_node
+          access_plugin: views_add_button_node
+          context: ''
+          button_text: 'Добавить статью'
+          button_classes: 'button button-action button--primary button--small'
+          button_attributes: ''
+          button_access_denied:
+            value: ''
+            format: basic_html
+          button_prefix:
+            value: ''
+            format: basic_html
+          button_suffix:
+            value: ''
+            format: basic_html
+          query_string: article
+          destination: 1
+          plugin_id: views_add_button_area
       footer: {  }
       empty: {  }
       relationships: {  }

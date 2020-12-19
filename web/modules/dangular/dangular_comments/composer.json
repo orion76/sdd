@@ -1,0 +1,13 @@
+{
+    "name": "dangular_comments",
+    "type": "drupal-module",
+    "description": "Angular Comment component",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/dangular_comments",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/dangular_comments",
+        "source": "http://cgit.drupalcode.org/dangular_comments"
+    }
+}

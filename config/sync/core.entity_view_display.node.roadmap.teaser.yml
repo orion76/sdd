@@ -1,0 +1,35 @@
+uuid: c606d289-542f-47fa-a966-415157743d04
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.roadmap.body
+    - field.field.node.roadmap.field_roadmap_section
+    - node.type.roadmap
+  module:
+    - text
+    - user
+id: node.roadmap.teaser
+targetEntityType: node
+bundle: roadmap
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_roadmap_section: true
+  flag_email_node: true
+  flag_subscribe_node: true
+  langcode: true

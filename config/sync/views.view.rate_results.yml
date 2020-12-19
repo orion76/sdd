@@ -1,6 +1,6 @@
 uuid: 495428da-b095-4a35-9e4d-1f38fadbfe56
 langcode: ru
-status: true
+status: false
 dependencies:
   enforced:
     module:

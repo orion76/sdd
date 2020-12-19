@@ -1,0 +1,56 @@
+uuid: 20630944-b552-4a65-9092-4a090f4a4137
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.profile.common.field_location
+    - field.field.profile.common.field_profession
+    - profile.type.common
+  module:
+    - field_layout
+    - inline_entity_form
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: profile.common.default
+targetEntityType: profile
+bundle: common
+mode: default
+content:
+  field_location:
+    weight: 26
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_profession:
+    weight: 27
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  is_default: true

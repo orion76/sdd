@@ -1,0 +1,256 @@
+<?php
+
+/**
+ * @file
+ * Holds hook implementation for the Message Group Notify module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Entity\ContentEntityInterface;
+
+/**
+ * Implements hook_help().
+ */
+function message_group_notify_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the message_group_notify module.
+    // @todo add routes
+    case 'help.page.message_group_notify':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Notifies groups on entity creation or update.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_mail().
+ */
+function message_group_notify_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'group_notify_node':
+      // Customize from mail and name.
+      // Override from related headers, leave others to mime mail.
+      // @todo probably check if mime mail is installed
+      $message['headers']['From'] = $params['from_name'] . ' <' . $params['from_mail'] . '>';
+      // Currently overridden by default.
+      $message['headers']['Sender'] = $params['from_mail'];
+      // Currently overridden by default.
+      $message['headers']['Return-Path'] = $params['from_mail'];
+      // Override Drupal related from keys.
+      $message['from'] = $params['from_mail'];
+      // Currently overridden by default.
+      $message['reply-to'] = $params['from_mail'];
+
+      // Set's the message subject and body as configured.
+      // @see message_notify
+      $message['subject'] = $params['mail_subject'];
+      $message['body'][] = $params['mail_body'];
+      break;
+  }
+}
+
+/**
+ * Implements hook_entity_operation().
+ */
+function message_group_notify_entity_operation(EntityInterface $entity) {
+  $operations = [];
+  $info = $entity->getEntityType();
+
+  if ($info->getBundleOf() === 'node') {
+    $account = \Drupal::currentUser();
+
+    if ($account->hasPermission('administer nodes') && $account->hasPermission('administer content types')) {
+      $operations['message-group-notify'] = [
+        'title' => t('Group notify'),
+        'weight' => 99,
+        'url' => Url::fromRoute('entity.node_type.message_group_notify', [
+          'node_type' => $entity->id(),
+        ]),
+      ];
+    }
+  }
+
+  return $operations;
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function message_group_notify_entity_insert(EntityInterface $entity) {
+  /** @var \Drupal\message_group_notify\EntitySubscriber $subscriber */
+  $subscriber = \Drupal::service('message_group_notify.entity_subscriber');
+  $subscriber->onCreate($entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function message_group_notify_entity_update(EntityInterface $entity) {
+  /** @var \Drupal\message_group_notify\EntitySubscriber $subscriber */
+  $subscriber = \Drupal::service('message_group_notify.entity_subscriber');
+  $subscriber->onUpdate($entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function message_group_notify_entity_delete(EntityInterface $entity) {
+  /** @var \Drupal\message_group_notify\EntitySubscriber $subscriber */
+  $subscriber = \Drupal::service('message_group_notify.entity_subscriber');
+  $subscriber->onDelete($entity);
+}
+
+/**
+ * Return message_group_notify's settings.
+ *
+ * @param string $setting
+ *   One of the message_group_notify_available_settings(), e.g. 'groups'.
+ *   If 'all' is passed, all available settings are returned.
+ * @param string $type_name
+ *   The name of the content type to return settings for.
+ *
+ * @return string|array
+ *   The value of the given setting or an array of all settings.
+ */
+function message_group_notify_get_settings($setting, $type_name) {
+  $config = \Drupal::configFactory()->getEditable('message_group_notify.settings');
+  $settings = unserialize($config->get('message_group_notify_node_type.' . $type_name));
+  if (empty($settings)) {
+    $settings = [];
+  }
+  $settings += message_group_notify_get_setting_defaults($type_name);
+
+  if ($setting == 'all') {
+    return $settings;
+  }
+
+  return isset($settings[$setting]) ? $settings[$setting] : NULL;
+}
+
+/**
+ * Save message_group_notify settings of a content type.
+ */
+function message_group_notify_set_settings($settings, $type_name) {
+  $config = \Drupal::configFactory()->getEditable('message_group_notify.settings');
+
+  // Do not store default values.
+  // @todo to review
+  foreach (message_group_notify_get_setting_defaults($type_name) as $setting => $default_value) {
+    if (isset($settings[$setting]) && $settings[$setting] == $default_value) {
+      unset($settings[$setting]);
+    }
+  }
+  $config->set('message_group_notify_node_type.' . $type_name, serialize($settings));
+  $config->save();
+}
+
+/**
+ * Return an array containing all available message_group_notify settings.
+ */
+function message_group_notify_available_settings() {
+  return [
+    'enabled',
+    'groups',
+    'send_mode',
+    'operations',
+    'channels',
+  ];
+}
+
+/**
+ * Defines default values for settings.
+ */
+function message_group_notify_get_setting_defaults($type) {
+  $defaults = [];
+  $defaults['enabled'] = FALSE;
+  $defaults['groups'] = [];
+  // The enabled value is not set by default, so at a first sight the
+  // following ones should be empty. But setting them to node mode and
+  // create mode while enabling them could avoid configuration issues.
+  // If this option is taken, we could add extra default values when
+  // enabled is set to TRUE.
+  // $defaults['send_mode']=MessageGroupNotifierInterface::SEND_MODE_NODE;
+  // $defaults['operations']=[MessageGroupNotifierInterface::OPERATION_CREATE];
+  // $defaults['channels']=['mail'];.
+  $defaults['send_mode'] = NULL;
+  $defaults['operations'] = [];
+  $defaults['channels'] = [];
+
+  return $defaults;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function message_group_notify_theme() {
+  $theme = [];
+  $theme['message_group'] = [
+    'render element' => 'elements',
+    'file' => 'message_group.page.inc',
+    'template' => 'message_group',
+  ];
+  $theme['message_group_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'message_group.page.inc',
+  ];
+  $theme['entity_group_notify'] = [
+    'render element' => 'elements',
+  ];
+  return $theme;
+}
+
+/**
+ * Prepares variables for entity group notify templates.
+ *
+ * Default template: entity-group-notify.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the components of the page
+ *     - #entity: The entity that is the subject of the Message.
+ *     - #send_message_form: A form to send the Message to MessageGroups.
+ *     - #messages_table: The table of already sent messages for this entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_entity_group_notify(array &$variables) {
+  $variables['entity'] = $variables['elements']['#entity'];
+  $variables['send_message_form'] = $variables['elements']['#send_message_form'];
+  $variables['messages_table'] = $variables['elements']['#messages_table'];
+
+  /** @var \Drupal\Core\Entity\ContentEntityInterface $entity */
+  $entity = $variables['entity'];
+  if ($entity instanceof ContentEntityInterface) {
+    $variables['title'] = $variables['entity']->label();
+  }
+
+  // @todo add helper variables.
+
+  // Helpful $content variable for templates.
+  $variables['content'] = [];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function message_group_notify_theme_suggestions_message_group(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#message_group'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'message_group__' . $sanitized_view_mode;
+  $suggestions[] = 'message_group__' . $entity->bundle();
+  $suggestions[] = 'message_group__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'message_group__' . $entity->id();
+  $suggestions[] = 'message_group__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

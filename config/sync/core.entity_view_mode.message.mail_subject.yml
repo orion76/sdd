@@ -1,0 +1,12 @@
+uuid: c526fdfa-3c92-4a30-bb08-a0133a31ec27
+langcode: ru
+status: true
+dependencies:
+  module:
+    - message
+_core:
+  default_config_hash: oEpQRdvbNOf_zOLFMVB72xOu09bAn8SQqlc7H2vI_-Q
+id: message.mail_subject
+label: 'Notify - Email subject'
+targetEntityType: message
+cache: true

@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function comment_computed_fields_install() {
+  /** @var \Drupal\Core\Field\FieldStorageDefinitionListener */
+  $storage = \Drupal::getContainer()->get('field_storage_definition.listener');
+  $field_manager = \Drupal::getContainer()->get('entity_field.manager');
+  $definition = $field_manager->getFieldStorageDefinitions('comment')['is_root'];
+  $storage->onFieldStorageDefinitionCreate($definition);
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function comment_computed_fields_uninstall() {
+  /** @var \Drupal\Core\Field\FieldStorageDefinitionListener */
+  $storage = \Drupal::getContainer()->get('field_storage_definition.listener');
+  $field_manager = \Drupal::getContainer()->get('entity_field.manager');
+  if ($definition = $field_manager->getFieldStorageDefinitions('comment')['is_root']) {
+    try {
+      $storage->onFieldStorageDefinitionDelete($definition);
+    } catch (Exception $e) {
+
+    }
+
+  }
+
+}

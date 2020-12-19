@@ -1,0 +1,22 @@
+uuid: 19641a64-73bb-4ce6-82af-284a2a1f3bc2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.party_activity
+id: node.party_activity.promote
+field_name: promote
+entity_type: node
+bundle: party_activity
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

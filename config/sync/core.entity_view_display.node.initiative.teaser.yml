@@ -1,0 +1,32 @@
+uuid: ca57408b-4f73-43cd-90b8-4f17b3e3fd97
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.initiative.body
+    - node.type.initiative
+  module:
+    - text
+    - user
+id: node.initiative.teaser
+targetEntityType: node
+bundle: initiative
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  flag_email_node: true
+  langcode: true

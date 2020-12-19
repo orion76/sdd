@@ -1,0 +1,17 @@
+uuid: e271701d-6204-4355-ba94-c487367ef95b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.group
+  enforced:
+    config:
+      - user.role.manager
+id: group-443ed8e03
+label: manager
+weight: 3
+internal: true
+audience: outsider
+group_type: group
+permissions_ui: false
+permissions: {  }
